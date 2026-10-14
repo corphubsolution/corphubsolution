@@ -135,7 +135,7 @@ export default function Header() {
                       style={{ letterSpacing: '0.02em' }}
                       onClick={() => setServicesOpen((v) => !v)}
                       aria-expanded={servicesOpen}
-                      aria-haspopup="true"
+                      aria-controls="services-dropdown"
                       id="services-menu-btn"
                     >
                       <span>Services</span>
@@ -168,6 +168,7 @@ export default function Header() {
                       onMouseLeave={handleServicesMouseLeave}
                     >
                       <div
+                        id="services-dropdown"
                         className="rounded-2xl overflow-hidden shadow-2xl"
                         style={{
                           background: 'rgba(7, 28, 60, 0.96)',
@@ -176,8 +177,7 @@ export default function Header() {
                           border: '1px solid rgba(255, 107, 0, 0.25)',
                           boxShadow: '0 25px 60px -15px rgba(0,0,0,0.7), 0 0 25px rgba(255,107,0,0.15)',
                         }}
-                        role="menu"
-                        aria-labelledby="services-menu-btn"
+                        aria-label="Industrial support services"
                       >
                         {/* Top Accent Strip */}
                         <div className="h-1 w-full bg-gradient-to-r from-orange-500 via-amber-400 to-orange-600" />
@@ -200,7 +200,6 @@ export default function Header() {
                               to={service.slug}
                               onClick={() => setServicesOpen(false)}
                               className="group flex items-center gap-3.5 p-2.5 rounded-xl hover:bg-white/[0.08] transition-all duration-200"
-                              role="menuitem"
                             >
                               <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 bg-white/5 border border-white/10 text-orange-400 group-hover:bg-gradient-to-br group-hover:from-orange-500 group-hover:to-orange-600 group-hover:text-white group-hover:border-orange-500 group-hover:scale-105 transition-all duration-200 shadow-sm">
                                 <service.icon size={18} aria-hidden="true" />
