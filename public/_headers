@@ -1,0 +1,23 @@
+# Production Cache-Control & Security Headers for corphubsolution.in
+
+# Static hashed assets (1 year immutable cache)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Modern WebP and compressed media assets
+/assets/images/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+# HTML entry points (must revalidate to pick up new hashed releases immediately)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Global Security Headers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin

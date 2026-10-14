@@ -1,0 +1,7 @@
+# Netlify / Cloudflare Pages SPA direct routing & domain redirects for corphubsolution.in
+https://www.corphubsolution.in/* https://corphubsolution.in/:splat 301!
+http://www.corphubsolution.in/* https://corphubsolution.in/:splat 301!
+http://corphubsolution.in/* https://corphubsolution.in/:splat 301!
+
+# SPA Fallback for direct page visits and refreshes
+/*    /index.html   200
