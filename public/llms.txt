@@ -1,17 +1,24 @@
-# CORPHUB SOLUTION — Industrial Support Services
+# CORPHUB SOLUTION
 
 > Single-window industrial project support partner based in Palanpur, Banaskantha District, Gujarat, India.
 
-## Company Information
-- Name: CORPHUB SOLUTION
-- Headquarters: Palanpur, Banaskantha, Gujarat, India
-- Website: https://corphubsolution.in
-- Phone / WhatsApp: +91 9157060290
-- Email: corphubsolution@gmail.com
+CORPHUB SOLUTION provides integrated industrial project support services across Gujarat and Northern India. We coordinate corporate workforce accommodation, site transportation, industrial material supply, vendor management, and corporate event logistics so project teams can focus on core engineering and construction operations.
 
-## Core Services
-- Accommodation: Turnkey corporate guest houses, engineer flats, and managed workforce housing near industrial project sites in Gujarat. (URL: https://corphubsolution.in/services/accommodation)
-- Transport: Daily workforce commute shuttles, executive car rentals, airport pickups, and industrial site vehicle fleets. (URL: https://corphubsolution.in/services/transport)
-- Material Supply: Sourcing and delivery of construction consumables, PPE safety gear, industrial cables, pipes, and generator/equipment rentals. (URL: https://corphubsolution.in/services/material-supply)
-- Vendor Management: Contractor vetting, rate negotiation, SLA compliance tracking, dispute resolution, and local ground administration. (URL: https://corphubsolution.in/services/vendor-management)
-- Event Management: Turnkey execution for plant inaugurations, Bhoomi Pujan, corporate annual meets, vendor summits, and HSE safety workshops. (URL: https://corphubsolution.in/services/event-management)
+## Services
+
+- [Workforce Accommodation](/services/accommodation): Turnkey corporate guest houses, engineer flats, and managed workforce housing near industrial project sites in Gujarat.
+- [Corporate & Site Transport](/services/transport): Daily workforce commute shuttles, executive car rentals, airport pickups, and industrial site vehicle fleets.
+- [Industrial Material Supply](/services/material-supply): Sourcing and delivery of construction consumables, PPE safety gear, industrial cables, pipes, and site machinery.
+- [Vendor Management & Site Liaison](/services/vendor-management): Contractor vetting, rate negotiation, SLA compliance tracking, dispute resolution, and local ground administration.
+- [Corporate Event Management](/services/event-management): Turnkey execution for plant inaugurations, Bhoomi Pujan, corporate annual meets, vendor summits, and HSE safety workshops.
+
+## Key Pages
+
+- [Home](https://corphubsolution.in/): Overview of single-window industrial support operations and company profile.
+- [About Us](/about): Background on company leadership, local network across Gujarat, and operating standards.
+- [Contact & Inquiries](/contact): Direct RFP inquiries, emergency site support, and office contact information.
+
+## Optional
+
+- [AI Resource Catalog](/ai-catalog.json): Structured ARD v1 JSON manifest of services and resources for autonomous AI agents.
+- [XML Sitemap](/sitemap.xml): Full website index for search crawlers.
