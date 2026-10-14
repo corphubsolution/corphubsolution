@@ -39,7 +39,7 @@ export default function HomePage() {
     <>
       <SEO
         title="CORPHUB SOLUTION — Industrial Support Services | Palanpur, Gujarat"
-        description="Single-window industrial project support in Palanpur & Gujarat: corporate accommodation, site transport, industrial material supply, vendor management, and corporate events."
+        description="Industrial project support in Palanpur, Gujarat: workforce housing, site transport, material supply, vendor management & corporate event logistics."
         canonicalPath="/"
         ogImage="/assets/images/hero-home.jpg"
       />

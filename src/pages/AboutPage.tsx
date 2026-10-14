@@ -83,7 +83,7 @@ export default function AboutPage() {
     <>
       <SEO
         title="About Us | CORPHUB SOLUTION — Industrial Support Partner Palanpur, Gujarat"
-        description="Learn about CORPHUB SOLUTION, based in Palanpur, Gujarat. We provide single-window industrial project support: workforce housing, site transport, material supply, vendor management, and corporate events."
+        description="About CORPHUB SOLUTION in Palanpur, Gujarat: dedicated operations partner providing turnkey workforce housing, transport, material supply & site liaison."
         canonicalPath="/about"
         ogImage="/assets/images/about-team.jpg"
         breadcrumbs={[

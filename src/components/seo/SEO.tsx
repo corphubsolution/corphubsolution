@@ -21,7 +21,7 @@ interface SEOProps {
 }
 
 const SITE_URL = 'https://corphubsolution.in';
-const DEFAULT_IMAGE = `${SITE_URL}/assets/images/hero-home.jpg`;
+const DEFAULT_IMAGE = '/assets/images/hero-home.jpg';
 const LOGO_URL = `${SITE_URL}/assets/logo/logo-main.png`;
 
 export default function SEO({
@@ -34,12 +34,19 @@ export default function SEO({
   breadcrumbs,
   serviceSchema,
 }: SEOProps) {
-  // Normalize canonical
+  // Canonical strictly points to the preferred production domain to prevent duplicate indexing across Vercel preview URLs
   const canonicalUrl = canonicalPath.startsWith('http')
     ? canonicalPath
     : `${SITE_URL}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;
 
-  const imageUrl = ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`;
+  // Dynamic host adaptation: allows share previews to work on Vercel preview URLs even before DNS is pointed
+  const activeOrigin = typeof window !== 'undefined' && window.location.origin
+    ? window.location.origin
+    : SITE_URL;
+
+  const imageUrl = ogImage.startsWith('http')
+    ? ogImage
+    : `${activeOrigin}${ogImage.startsWith('/') ? ogImage : `/${ogImage}`}`;
 
   // Organization / LocalBusiness Schema (Always included as base)
   const organizationSchema = {
