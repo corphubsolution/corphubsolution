@@ -1,8 +1,20 @@
 {
-  "cleanUrls": true,
+  "cleanUrls": false,
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/google27ae7c9ffeb87504.html",
+      "destination": "/google27ae7c9ffeb87504.html"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap.xml"
+    },
+    {
+      "source": "/((?!.*\\.(?:html|xml|txt|ico|png|svg|jpg|jpeg|webp|js|css)$).*)",
       "destination": "/index.html"
     }
   ],
