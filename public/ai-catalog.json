@@ -1,0 +1,53 @@
+{
+  "$schema": "https://agenticresourcediscovery.org/spec/v1/schema.json",
+  "name": "CORPHUB SOLUTION",
+  "description": "Industrial project support services provider in Palanpur, Banaskantha, Gujarat, India. Offering single-window corporate accommodation, site transport, industrial material supply, vendor management, and corporate event logistics.",
+  "url": "https://corphubsolution.in",
+  "contact": {
+    "email": "corphubsolution@gmail.com",
+    "phone": "+919157060290"
+  },
+  "location": {
+    "city": "Palanpur",
+    "district": "Banaskantha",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "resources": [
+    {
+      "id": "accommodation",
+      "name": "Workforce Accommodation",
+      "type": "service",
+      "url": "https://corphubsolution.in/services/accommodation",
+      "description": "Turnkey corporate guest houses, engineer flats, and managed workforce housing in Palanpur and Gujarat."
+    },
+    {
+      "id": "transport",
+      "name": "Corporate & Site Transport",
+      "type": "service",
+      "url": "https://corphubsolution.in/services/transport",
+      "description": "Professional employee commute shuttles, site transport, executive car rentals, and airport transfers for industrial projects."
+    },
+    {
+      "id": "material-supply",
+      "name": "Industrial Material Supply",
+      "type": "service",
+      "url": "https://corphubsolution.in/services/material-supply",
+      "description": "Reliable procurement of industrial construction consumables, PPE safety gear, electrical items, and project machinery."
+    },
+    {
+      "id": "vendor-management",
+      "name": "Vendor Management & Site Liaison",
+      "type": "service",
+      "url": "https://corphubsolution.in/services/vendor-management",
+      "description": "End-to-end vendor vetting, contract administration, SLA compliance tracking, and dispute management for engineering sites."
+    },
+    {
+      "id": "event-management",
+      "name": "Corporate Event Management",
+      "type": "service",
+      "url": "https://corphubsolution.in/services/event-management",
+      "description": "Turnkey event management for plant inaugurations, Bhoomi Pujan, corporate annual meets, vendor summits, and HSE safety workshops."
+    }
+  ]
+}

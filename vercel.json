@@ -14,7 +14,19 @@
       "destination": "/api/sitemap"
     },
     {
-      "source": "/((?!.*\\.(?:html|xml|txt|ico|png|svg|jpg|jpeg|webp|js|css)$).*)",
+      "source": "/ai-catalog.json",
+      "destination": "/ai-catalog.json"
+    },
+    {
+      "source": "/llms.txt",
+      "destination": "/llms.txt"
+    },
+    {
+      "source": "/\\.well-known/(.*)",
+      "destination": "/.well-known/$1"
+    },
+    {
+      "source": "/((?!.*\\.(?:html|xml|txt|ico|png|svg|jpg|jpeg|webp|js|css|json)$).*)",
       "destination": "/index.html"
     }
   ],
