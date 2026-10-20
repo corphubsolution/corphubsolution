@@ -36,7 +36,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #071C3C;
-  overscroll-behavior-y: none;
 }
 
 body {
@@ -45,7 +44,12 @@ body {
   line-height: 1.6;
   color: var(--color-gray-900);
   background-color: #071C3C;
-  overscroll-behavior-y: none;
+  min-height: 100vh;
+}
+
+#root {
+  overflow-x: clip;
+  min-height: 100vh;
 }
 
 img {

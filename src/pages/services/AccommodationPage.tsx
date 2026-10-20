@@ -1,102 +1,129 @@
 import SEO from '../../components/seo/SEO';
 import { 
   Building2, 
-  CheckCircle2, 
+  Hotel, 
   Home, 
-  ShieldCheck, 
+  Target, 
   Clock, 
-  MapPin, 
-  Key, 
-  Sparkles 
+  ListChecks, 
+  UserCheck, 
+  CalendarDays, 
+  Headphones, 
+  Users,
+  ChevronRight,
+  ArrowRight,
+  Factory,
+  HardHat,
+  Wrench,
+  Briefcase
 } from 'lucide-react';
 import PageHero from '../../components/sections/PageHero';
-import SectionLabel from '../../components/ui/SectionLabel';
 import ScrollReveal from '../../components/ui/ScrollReveal';
-import FeatureItem from '../../components/ui/FeatureItem';
 import Button from '../../components/ui/Button';
-import EnquiryCTA from '../../components/sections/EnquiryCTA';
 import { buildEnquiryLink } from '../../utils/whatsapp';
 
-const ACCOMMODATION_TYPES = [
+const WHO_WE_SERVE = [
   {
-    icon: Sparkles,
-    title: 'Executive & Management Guest Houses',
-    tag: 'Premium',
-    description: 'Fully-furnished, air-conditioned apartments and standalone bungalows designed for senior management, visiting auditors, and technical consultants. Includes high-speed broadband, housekeeping, and quiet work environments.',
-    features: ['High-speed Wi-Fi & AC', 'Dedicated housekeeping options', 'Executive furnishings & appliances', 'Gated security & parking'],
+    icon: Factory,
+    title: 'Manufacturing Companies',
+    tag: 'Industrial Estates & GIDC',
+    badge: 'Shift-Ready Stays',
+    desc: 'Turnkey housing and flats situated close to major plant gates (Sanand, Mehsana, Palanpur), ensuring punctual shift rotations and zero transit fatigue.',
   },
   {
-    icon: Home,
-    title: 'Engineers & Supervisors Shared Flats',
-    tag: 'Long-term / Project',
-    description: 'Well-maintained 2 BHK and 3 BHK residential units located within easy commuting distance of your industrial plant or construction site. Fully setup with bedding, water purifiers, kitchen appliances, and power backup.',
-    features: ['Furnished bedrooms & living spaces', 'Operational kitchen & refrigerator', 'Reliable water & electricity supply', 'Proximity to major transit routes'],
+    icon: HardHat,
+    title: 'Engineering & EPC Firms',
+    tag: 'Turnkey Project Sites',
+    badge: 'Executive & Site Flats',
+    desc: 'Dedicated corporate guest houses, 2/3 BHK flats, and managed accommodations tailored for resident engineers, project directors, and site supervisors.',
+  },
+  {
+    icon: Wrench,
+    title: 'Industrial Contractors',
+    tag: 'Maintenance & Shutdowns',
+    badge: 'Flexible Tenure',
+    desc: 'Scalable accommodation solutions for fabrication teams, mechanical crews, and shutdown contractors with transparent corporate billing.',
   },
   {
     icon: Building2,
-    title: 'Workforce & Technician Housing',
-    tag: 'Scalable',
-    description: 'Clean, safe, and regulated accommodation complexes capable of housing large technical and contract teams. Structured to meet high hygiene, safety, and labor welfare standards.',
-    features: ['Adequate sanitation & bathing units', 'Ventilated, hygienic sleeping quarters', 'Proximity to project shuttles', 'Periodic maintenance & sanitisation'],
+    title: 'Infrastructure Projects',
+    tag: 'Corridors & Remote Hubs',
+    badge: 'Fast Mobilisation',
+    desc: 'Quick turnaround housing setups along highway expansions, solar energy parks, railway freight corridors, and power transmission sites across Gujarat.',
   },
   {
-    icon: Key,
-    title: 'Turnkey Lease & Facility Management',
-    tag: 'End-to-End',
-    description: 'We manage landlord negotiations, lease agreements, security deposits, utility billing, and maintenance repairs so your HR and procurement departments are never burdened with rental hassles.',
-    features: ['Direct landlord liaison', 'Standard corporate lease agreements', 'Electricity & utility bill management', '24/7 emergency maintenance support'],
-  },
-];
-
-const PROCESS_STEPS = [
-  {
-    step: '01',
-    title: 'Share Team Requirements',
-    desc: 'Tell us team size, tier (executives, engineers, technicians), preferred radius to site, and expected tenure.',
+    icon: Briefcase,
+    title: 'Corporate Offices',
+    tag: 'Executive & Regional Teams',
+    badge: 'Serviced Stays',
+    desc: 'Premium serviced apartments and executive living quarters with high-speed Wi-Fi, quiet work areas, routine housekeeping, and full GST invoicing.',
   },
   {
-    step: '02',
-    title: 'Shortlisted Property Visits',
-    desc: 'We curate vetted properties in Palanpur / North Gujarat and provide photo tours or on-site inspections.',
-  },
-  {
-    step: '03',
-    title: 'Fast Furnishing & Setup',
-    desc: 'We arrange furniture, bedding, appliances, utilities, and internet connections before your team arrives.',
-  },
-  {
-    step: '04',
-    title: 'Continuous Support',
-    desc: 'Our local coordination team handles ongoing maintenance, repairs, and landlord coordination throughout.',
+    icon: UserCheck,
+    title: 'Visiting Engineers & Technicians',
+    tag: 'Short-Term & On-Demand',
+    badge: 'PO-Based Booking',
+    desc: 'Daily, weekly, or 15-day flexible hotel & guest house stays arranged smoothly through official POs, eliminating personal employee expense claims.',
   },
 ];
 
 export default function AccommodationPage() {
-  const whatsappUrl = buildEnquiryLink('Accommodation Services');
+  const whatsappUrl = buildEnquiryLink('Corporate Accommodation Services');
+
+  const scrollToSolutions = () => {
+    const el = document.getElementById('accommodation-solutions');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
       <SEO
-        title="Industrial Accommodation & Corporate Guest Houses | Palanpur, Gujarat | CORPHUB SOLUTION"
-        description="Turnkey corporate accommodation, engineer flats, and managed workforce housing in Palanpur, Banaskantha, and Gujarat. Complete lease & facility management."
+        title="Corporate & Industrial Accommodation Solutions | CORPHUB SOLUTION"
+        description="The Right Stay. The Right Support. One Coordinated Solution. We help corporate and industrial companies arrange suitable accommodation for employees, visiting professionals and project teams."
         canonicalPath="/services/accommodation"
-        ogImage="/assets/images/accommodation-hero.jpg"
+        ogImage="/assets/images/accommodation-hero.png"
+        keywords={[
+          'Corporate accommodation Palanpur Gujarat',
+          'Industrial workforce housing Gujarat',
+          'Turnkey engineer guest house Banaskantha',
+          'EPC project staff flats Palanpur',
+          'Serviced apartments industrial Gujarat',
+          'Corporate guest house booking PO basis',
+          'CorpHub Solution accommodation'
+        ]}
         breadcrumbs={[
           { label: 'Home', href: '/' },
+          { label: 'Services', href: '/#services' },
           { label: 'Accommodation', href: '/services/accommodation' },
         ]}
         serviceSchema={{
-          name: 'Industrial Accommodation & Corporate Guest Houses',
-          description: 'Turnkey project staff accommodation, executive guest houses, and managed engineer flats in Palanpur and Gujarat.',
+          name: 'Corporate & Industrial Accommodation Solutions',
+          description: 'Rental property arrangements, hotel & guest houses, and managed accommodation for industrial companies and project teams in Gujarat.',
           serviceType: 'Corporate Accommodation Services',
         }}
+        faqSchema={[
+          {
+            question: 'How does CorpHub Solution coordinate accommodation for industrial projects in Gujarat?',
+            answer: 'CorpHub Solution provides end-to-end rental property sourcing, corporate hotel bookings, and managed executive guest houses across Palanpur, Banaskantha, and Gujarat with single-point coordination and flexible lease options.',
+          },
+          {
+            question: 'Can companies book project accommodation under PO or official credit terms?',
+            answer: 'Yes, CorpHub Solution accepts corporate booking requests through Purchase Orders (PO) or official email agreements, with no advance payment required for eligible corporate clients under approved written credit terms.',
+          },
+          {
+            question: 'What is included in managed accommodation services?',
+            answer: 'Managed accommodation includes housekeeping coordination, maintenance management, electricity/water/gas bill settlement, high-speed Wi-Fi internet, and laundry services.',
+          },
+        ]}
       />
 
-      {/* Hero */}
+      {/* Hero Section */}
       <PageHero
-        title="Project Accommodation & Housing Solutions"
-        subtitle="Industrial Accommodation"
-        image="/assets/images/accommodation-hero.jpg"
+        title="CORPORATE & INDUSTRIAL ACCOMMODATION SOLUTIONS"
+        subtitle="The Right Stay. The Right Support. One Coordinated Solution."
+        image="/assets/images/accommodation-hero.png"
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/#services' },
@@ -104,204 +131,515 @@ export default function AccommodationPage() {
         ]}
       />
 
-      {/* Overview */}
-      <section className="section-py" style={{ background: '#FFFFFF' }}>
+      {/* Hero Visual Card Section (Matching Reference Mockup) */}
+      <section className="py-12 md:py-16 bg-[#F8FAFC]">
         <div className="container-site">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-7">
-              <ScrollReveal>
-                <SectionLabel text="Corporate Living Support" />
-                <h2
-                  className="font-display mb-6"
-                  style={{
-                    fontSize: 'clamp(2rem, 3.5vw, 2.75rem)',
-                    fontWeight: 800,
-                    color: '#071C3C',
-                    lineHeight: 1.15,
-                  }}
-                >
-                  Comfortable, Verified Living Spaces for Your Industrial Workforce
-                </h2>
-                <p className="text-base leading-relaxed mb-4 text-gray-600">
-                  Securing quality housing in industrial belts like Banaskantha, Mehsana, and rural project zones across Gujarat can be frustrating. Long search cycles, substandard living conditions, unclear landlord terms, and absent maintenance directly impact your team's morale and productivity.
-                </p>
-                <p className="text-base leading-relaxed mb-6 text-gray-600">
-                  <strong className="text-navy-900">CORPHUB SOLUTION</strong> acts as your ground partner. We maintain relationships with verified property owners across the region, allowing us to rapidly deploy furnished guest houses, executive bungalows, and team apartments tailored to your project schedule.
-                </p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  <FeatureItem text="Proximity to project sites" description="Minimize transit time and daily commute fatigue." />
-                  <FeatureItem text="Turnkey ready-to-move units" description="Equipped with bedding, appliances, and power backup." />
-                  <FeatureItem text="Flexible lease terms" description="From short-term project sprints to multi-year contracts." />
-                  <FeatureItem text="Single unified billing" description="Clean GST billing without tracking dozens of landlords." />
-                </div>
-
-                <div className="flex flex-wrap gap-4">
-                  <Button variant="primary" href={whatsappUrl} external>
-                    Enquire on WhatsApp
-                  </Button>
-                  <Button variant="secondary" href="/contact">
-                    Request Housing Proposal
-                  </Button>
-                </div>
-              </ScrollReveal>
-            </div>
-
-            <div className="lg:col-span-5">
-              <ScrollReveal delay={200}>
-                <div
-                  className="rounded-2xl p-8 text-white relative overflow-hidden shadow-xl"
-                  style={{ background: 'linear-gradient(135deg, #0A2E56 0%, #071C3C 100%)' }}
-                >
-                  <h3
-                    className="font-heading font-bold text-xl mb-4 border-b border-white/10 pb-3 text-white"
-                    style={{ color: '#FFFFFF' }}
+          <div className="bg-white rounded-3xl p-6 md:p-10 shadow-sm border border-gray-100">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              
+              {/* Left Content */}
+              <div className="lg:col-span-6">
+                <ScrollReveal>
+                  <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF6B00] mb-3 inline-block">
+                    Corporate Accommodation
+                  </span>
+                  
+                  <h1
+                    className="font-display mb-4 text-[#071C3C]"
+                    style={{
+                      fontSize: 'clamp(2rem, 3.5vw, 3rem)',
+                      fontWeight: 800,
+                      lineHeight: 1.15,
+                    }}
                   >
-                    Why Companies Rely on Our Housing
-                  </h3>
-                  <ul className="space-y-4 text-sm text-white/80">
-                    <li className="flex items-start gap-3">
-                      <ShieldCheck className="shrink-0 text-orange-400 mt-1" size={18} />
-                      <span><strong>Safety Verified:</strong> Safe neighborhoods, secure compounds, and reliable infrastructure.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Clock className="shrink-0 text-orange-400 mt-1" size={18} />
-                      <span><strong>Fast Turnaround:</strong> Accommodations ready for occupancy within 24 to 72 hours of approval.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <MapPin className="shrink-0 text-orange-400 mt-1" size={18} />
-                      <span><strong>Hyper-Local Reach:</strong> Active listings throughout Palanpur, Deesa, Mehsana, and Banaskantha.</span>
-                    </li>
-                  </ul>
+                    The Right Stay. The Right Support. <br />
+                    <span className="text-[#0284C7]">One Coordinated Solution.</span>
+                  </h1>
 
-                  <div className="mt-8 p-4 rounded-xl bg-white/10 border border-white/15">
-                    <p className="text-xs uppercase tracking-wider text-orange-300 font-bold mb-1">
-                      Need custom configuration?
-                    </p>
-                    <p className="text-xs text-white/70">
-                      We furnish properties to meet specific multinational corporate safety and accommodation guidelines.
-                    </p>
+                  <p className="text-base text-gray-600 leading-relaxed mb-6">
+                    We help corporate and industrial companies arrange suitable accommodation for employees, visiting professionals and project teams — with flexible options, competitive pricing and reliable coordination.
+                  </p>
+
+                  <div className="flex flex-wrap gap-4 items-center">
+                    <button
+                      onClick={scrollToSolutions}
+                      className="inline-flex items-center gap-2 bg-[#FF6B00] hover:bg-[#e05e00] text-white font-bold px-6 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 text-sm"
+                    >
+                      Explore Solutions <ArrowRight size={16} />
+                    </button>
+                    <Button variant="secondary" href={whatsappUrl} external>
+                      Speak With Us
+                    </Button>
                   </div>
-                </div>
-              </ScrollReveal>
+                </ScrollReveal>
+              </div>
+
+              {/* Right Hero Image (accommodation-hero.png) */}
+              <div className="lg:col-span-6">
+                <ScrollReveal delay={200}>
+                  <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-100 group">
+                    <img 
+                      src="/assets/images/accommodation-hero.png" 
+                      alt="Corporate Accommodation — Industrial & Executive Stay" 
+                      className="w-full h-[320px] md:h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 border border-white/20 shadow-lg flex items-center justify-between">
+                      <div>
+                        <p className="text-xs font-bold text-[#071C3C]">Industrial & Project Corridor Living</p>
+                        <p className="text-[11px] text-gray-500">Verified residential apartments, hotels & executive guest houses</p>
+                      </div>
+                      <span className="text-xs font-bold text-[#FF6B00] bg-orange-50 px-2.5 py-1 rounded-md">
+                        Palanpur & Gujarat
+                      </span>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              </div>
+
             </div>
           </div>
         </div>
       </section>
 
-      {/* Accommodation Tiers Grid */}
-      <section className="section-py" style={{ background: '#F8FAFC' }}>
+      {/* OUR ACCOMMODATION SOLUTIONS (3 Pillars) */}
+      <section id="accommodation-solutions" className="py-12 md:py-16 bg-white">
         <div className="container-site">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <SectionLabel text="Housing Categories" />
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF6B00] mb-2 inline-block">
+              Service Verticals
+            </span>
             <h2
-              className="font-display mt-2"
+              className="font-display text-[#071C3C]"
               style={{
                 fontSize: 'clamp(1.75rem, 3vw, 2.5rem)',
                 fontWeight: 800,
-                color: '#071C3C',
               }}
             >
-              Accommodation Tailored to Every Team Tier
+              OUR ACCOMMODATION SOLUTIONS
             </h2>
-            <p className="text-sm mt-3 text-gray-500">
-              Whether you need an executive suite for corporate directors or housing for a 50-member technical team, we have ready configurations.
+            <div className="w-16 h-1 bg-[#FF6B00] mx-auto mt-3 rounded-full" />
+          </div>
+
+          {/* 3 Verticals Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            {/* 01. Rental Property Arrangement */}
+            <ScrollReveal delay={100}>
+              <div className="bg-[#F8FAFC] rounded-2xl p-7 border border-gray-200/70 hover:border-orange-300 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 rounded-2xl bg-white border border-orange-100 text-[#FF6B00] flex items-center justify-center shadow-sm shrink-0">
+                    <Home size={28} />
+                  </div>
+                  <div>
+                    <span className="text-xs font-extrabold text-[#FF6B00] tracking-wider uppercase">01</span>
+                    <h3 className="font-heading font-extrabold text-lg text-[#071C3C] leading-snug">
+                      Rental Property Arrangement
+                    </h3>
+                  </div>
+                </div>
+
+                <p className="text-xs font-semibold italic text-[#0284C7] mb-4">
+                  Find the Right Property, Faster.
+                </p>
+
+                <ul className="space-y-2.5 text-xs text-gray-600 mt-2 mb-6">
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Fast property sourcing based on your requirements</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Multiple property options for comparison</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Property visit coordination</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Furnished, semi-furnished and unfurnished properties</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Flexible rental options based on budget and location</span>
+                  </li>
+                </ul>
+
+                <div className="mt-auto pt-4 border-t border-gray-200/60 flex items-center justify-between text-xs font-bold text-[#071C3C]">
+                  <span>Team & Engineer Flats</span>
+                  <ChevronRight size={16} className="text-[#FF6B00]" />
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* 02. Hotel & Guest House Accommodation */}
+            <ScrollReveal delay={200}>
+              <div className="bg-[#F8FAFC] rounded-2xl p-7 border border-gray-200/70 hover:border-orange-300 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 rounded-2xl bg-white border border-orange-100 text-[#FF6B00] flex items-center justify-center shadow-sm shrink-0">
+                    <Hotel size={28} />
+                  </div>
+                  <div>
+                    <span className="text-xs font-extrabold text-[#FF6B00] tracking-wider uppercase">02</span>
+                    <h3 className="font-heading font-extrabold text-lg text-[#071C3C] leading-snug">
+                      Hotel & Guest House Accommodation
+                    </h3>
+                  </div>
+                </div>
+
+                <p className="text-xs font-semibold italic text-[#0284C7] mb-4">
+                  Flexible Stays. Competitive Corporate Rates.
+                </p>
+
+                <ul className="space-y-2.5 text-xs text-gray-600 mt-2 mb-6">
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Daily, weekly, 15-day and monthly packages</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Hotel and guest house options tailored to your needs</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Competitive rates compared with similar MakeMyTrip and Goibibo listings</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Corporate booking requests through PO or official email</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>No advance payment for eligible bookings under approved credit terms</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>24×7 accommodation support</span>
+                  </li>
+                </ul>
+
+                <div className="mt-auto pt-4 border-t border-gray-200/60 flex items-center justify-between text-xs font-bold text-[#071C3C]">
+                  <span>Corporate Rates & PO Booking</span>
+                  <ChevronRight size={16} className="text-[#FF6B00]" />
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* 03. Managed Accommodation */}
+            <ScrollReveal delay={300}>
+              <div className="bg-[#F8FAFC] rounded-2xl p-7 border border-gray-200/70 hover:border-orange-300 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 rounded-2xl bg-white border border-orange-100 text-[#FF6B00] flex items-center justify-center shadow-sm shrink-0">
+                    <Building2 size={28} />
+                  </div>
+                  <div>
+                    <span className="text-xs font-extrabold text-[#FF6B00] tracking-wider uppercase">03</span>
+                    <h3 className="font-heading font-extrabold text-lg text-[#071C3C] leading-snug">
+                      Managed Accommodation
+                    </h3>
+                  </div>
+                </div>
+
+                <p className="text-xs font-semibold italic text-[#0284C7] mb-4">
+                  Complete Stay Management. Less Operational Burden.
+                </p>
+
+                <ul className="space-y-2.5 text-xs text-gray-600 mt-2 mb-6">
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Cleaning and housekeeping coordination</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Maintenance and repair management</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Electricity, water and gas bill coordination</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Wi-Fi and internet arrangements</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Laundry and other agreed services</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
+                    <span>Single-point coordination for accommodation-related needs</span>
+                  </li>
+                </ul>
+
+                <div className="mt-auto pt-4 border-t border-gray-200/60 flex items-center justify-between text-xs font-bold text-[#071C3C]">
+                  <span>End-to-End Living Care</span>
+                  <ChevronRight size={16} className="text-[#FF6B00]" />
+                </div>
+              </div>
+            </ScrollReveal>
+
+          </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE CORPHUB SOLUTION? (Feature Badges Pill Bar) */}
+      <section className="py-8 bg-[#F3F7FA] border-y border-gray-200">
+        <div className="container-site">
+          <div className="text-center mb-6">
+            <h3 className="text-sm font-extrabold uppercase tracking-widest text-[#071C3C]">
+              Why Choose CorpHub Solution?
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            
+            <div className="bg-white rounded-xl p-3.5 border border-gray-200 text-center shadow-xs flex flex-col items-center justify-center">
+              <div className="text-[#0284C7] mb-2">
+                <Target size={22} />
+              </div>
+              <p className="text-xs font-bold text-[#071C3C] leading-tight">
+                Corporate & Industrial Focus
+              </p>
+              <p className="text-[10px] text-gray-500 mt-1">Tailored for business</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-3.5 border border-gray-200 text-center shadow-xs flex flex-col items-center justify-center">
+              <div className="text-[#0284C7] mb-2">
+                <Clock size={22} />
+              </div>
+              <p className="text-xs font-bold text-[#071C3C] leading-tight">
+                Faster Coordination
+              </p>
+              <p className="text-[10px] text-gray-500 mt-1">Rapid turnarounds</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-3.5 border border-gray-200 text-center shadow-xs flex flex-col items-center justify-center">
+              <div className="text-[#0284C7] mb-2">
+                <ListChecks size={22} />
+              </div>
+              <p className="text-xs font-bold text-[#071C3C] leading-tight">
+                Multiple Options
+              </p>
+              <p className="text-[10px] text-gray-500 mt-1">Easy comparison</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-3.5 border border-gray-200 text-center shadow-xs flex flex-col items-center justify-center">
+              <div className="text-[#0284C7] mb-2">
+                <UserCheck size={22} />
+              </div>
+              <p className="text-xs font-bold text-[#071C3C] leading-tight">
+                One Point of Contact
+              </p>
+              <p className="text-[10px] text-gray-500 mt-1">Zero multi-vendor hassle</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-3.5 border border-gray-200 text-center shadow-xs flex flex-col items-center justify-center">
+              <div className="text-[#0284C7] mb-2">
+                <CalendarDays size={22} />
+              </div>
+              <p className="text-xs font-bold text-[#071C3C] leading-tight">
+                Flexible Packages
+              </p>
+              <p className="text-[10px] text-gray-500 mt-1">Daily to monthly</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-3.5 border border-gray-200 text-center shadow-xs flex flex-col items-center justify-center">
+              <div className="text-[#0284C7] mb-2">
+                <Headphones size={22} />
+              </div>
+              <p className="text-xs font-bold text-[#071C3C] leading-tight">
+                24×7 Support*
+              </p>
+              <p className="text-[10px] text-gray-500 mt-1">Round-the-clock help</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* HOW IT WORKS (5-Step Horizontal Flow) */}
+      <section className="py-14 md:py-18 bg-white">
+        <div className="container-site">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF6B00] mb-2 inline-block">
+              Simple Workflow
+            </span>
+            <h2
+              className="font-display text-[#071C3C]"
+              style={{
+                fontSize: 'clamp(1.75rem, 3vw, 2.5rem)',
+                fontWeight: 800,
+              }}
+            >
+              HOW IT WORKS
+            </h2>
+            <div className="w-16 h-1 bg-[#FF6B00] mx-auto mt-3 rounded-full" />
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 relative">
+            
+            {/* Step 1 */}
+            <div className="bg-[#F8FAFC] rounded-2xl p-5 border border-gray-200 text-center relative flex flex-col items-center">
+              <div className="w-12 h-12 rounded-full bg-[#0284C7] text-white font-bold flex items-center justify-center text-sm shadow-md mb-3">
+                01
+              </div>
+              <h4 className="font-heading font-bold text-sm text-[#071C3C] mb-1">Share Requirements</h4>
+              <p className="text-xs text-gray-500">Provide team size, location, budget and dates</p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-[#F8FAFC] rounded-2xl p-5 border border-gray-200 text-center relative flex flex-col items-center">
+              <div className="w-12 h-12 rounded-full bg-[#0284C7] text-white font-bold flex items-center justify-center text-sm shadow-md mb-3">
+                02
+              </div>
+              <h4 className="font-heading font-bold text-sm text-[#071C3C] mb-1">Explore Options</h4>
+              <p className="text-xs text-gray-500">Compare shortlisted properties & rates</p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-[#F8FAFC] rounded-2xl p-5 border border-gray-200 text-center relative flex flex-col items-center">
+              <div className="w-12 h-12 rounded-full bg-[#0284C7] text-white font-bold flex items-center justify-center text-sm shadow-md mb-3">
+                03
+              </div>
+              <h4 className="font-heading font-bold text-sm text-[#071C3C] mb-1">Review & Approve</h4>
+              <p className="text-xs text-gray-500">Finalize terms, package inclusions & PO</p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="bg-[#F8FAFC] rounded-2xl p-5 border border-gray-200 text-center relative flex flex-col items-center">
+              <div className="w-12 h-12 rounded-full bg-[#0284C7] text-white font-bold flex items-center justify-center text-sm shadow-md mb-3">
+                04
+              </div>
+              <h4 className="font-heading font-bold text-sm text-[#071C3C] mb-1">Confirm Booking</h4>
+              <p className="text-xs text-gray-500">Fast handover with all utilities configured</p>
+            </div>
+
+            {/* Step 5 */}
+            <div className="bg-[#F8FAFC] rounded-2xl p-5 border border-gray-200 text-center relative flex flex-col items-center">
+              <div className="w-12 h-12 rounded-full bg-[#FF6B00] text-white font-bold flex items-center justify-center text-sm shadow-md mb-3">
+                05
+              </div>
+              <h4 className="font-heading font-bold text-sm text-[#071C3C] mb-1">Receive Support</h4>
+              <p className="text-xs text-gray-500">Ongoing maintenance & single-point coordination</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* WHO WE SERVE (Premium Interactive Industry Cards) */}
+      <section className="py-14 md:py-18 bg-[#F8FAFC]">
+        <div className="container-site">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF6B00] mb-2 inline-block">
+              Tailored Industry Solutions
+            </span>
+            <h2
+              className="font-display text-[#071C3C]"
+              style={{
+                fontSize: 'clamp(1.75rem, 3vw, 2.5rem)',
+                fontWeight: 800,
+              }}
+            >
+              WHO WE SERVE
+            </h2>
+            <div className="w-16 h-1 bg-[#FF6B00] mx-auto mt-3 rounded-full mb-3" />
+            <p className="text-sm text-gray-500 max-w-xl mx-auto">
+              Customized corporate accommodation and project living solutions engineered for every stakeholder tier.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {ACCOMMODATION_TYPES.map((item, idx) => {
+          {/* 6 Industry Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            {WHO_WE_SERVE.map((item, idx) => {
               const Icon = item.icon;
               return (
-                <ScrollReveal key={idx} delay={idx * 100}>
-                  <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col justify-between">
-                    <div>
-                      <div className="flex items-center justify-between mb-4">
-                        <div
-                          className="w-12 h-12 rounded-xl flex items-center justify-center"
-                          style={{ background: 'rgba(10, 46, 86, 0.08)', color: '#0A2E56' }}
-                        >
-                          <Icon size={24} />
-                        </div>
-                        <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-navy-50 text-navy-800">
-                          {item.tag}
-                        </span>
+                <ScrollReveal key={idx} delay={idx * 70}>
+                  <div className="bg-white rounded-2xl p-6 border border-gray-200/80 hover:border-orange-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full flex flex-col group">
+                    
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="w-12 h-12 rounded-xl bg-[#071C3C] text-white flex items-center justify-center group-hover:bg-[#FF6B00] transition-colors shadow-sm shrink-0">
+                        <Icon size={24} />
                       </div>
-                      <h3 className="font-heading font-bold text-xl mb-3 text-navy-950">
-                        {item.title}
-                      </h3>
-                      <p className="text-sm text-gray-600 leading-relaxed mb-6">
-                        {item.description}
-                      </p>
+                      <span className="text-[11px] font-bold text-[#0284C7] bg-[#E0F2FE] px-2.5 py-1 rounded-full">
+                        {item.badge}
+                      </span>
                     </div>
 
-                    <div className="border-t border-gray-100 pt-5">
-                      <p className="text-xs font-bold text-navy-900 uppercase tracking-wider mb-3">
-                        Included Features:
-                      </p>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                        {item.features.map((feat, fIdx) => (
-                          <div key={fIdx} className="flex items-center gap-2 text-xs text-gray-600">
-                            <CheckCircle2 size={14} className="text-orange-500 shrink-0" />
-                            <span>{feat}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+                    <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-1">
+                      {item.tag}
+                    </span>
+
+                    <h3 className="font-heading font-extrabold text-base text-[#071C3C] group-hover:text-[#FF6B00] transition-colors mb-2">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-xs text-gray-600 leading-relaxed mt-auto">
+                      {item.desc}
+                    </p>
                   </div>
                 </ScrollReveal>
               );
             })}
           </div>
+
+          {/* Summary Pill Bar */}
+          <div className="bg-white border border-gray-200 rounded-2xl p-4 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-lg bg-[#FF6B00]/10 text-[#FF6B00] flex items-center justify-center shrink-0">
+                <Users size={16} />
+              </div>
+              <span className="text-xs font-bold text-[#071C3C]">
+                Ready to coordinate stays for your organization?
+              </span>
+            </div>
+            <div className="text-xs text-gray-500 font-medium">
+              Flexible options • Competitive corporate rates • Dedicated point of contact
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="section-py" style={{ background: '#FFFFFF' }}>
+      {/* LET US SIMPLIFY YOUR ACCOMMODATION NEEDS (Orange CTA Banner) */}
+      <section className="py-12 bg-white">
         <div className="container-site">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <SectionLabel text="Seamless Setup" />
-            <h2
-              className="font-display mt-2"
-              style={{
-                fontSize: 'clamp(1.75rem, 3vw, 2.5rem)',
-                fontWeight: 800,
-                color: '#071C3C',
-              }}
-            >
-              How We Mobilise Your Accommodation
-            </h2>
-            <p className="text-sm mt-3 text-gray-500">
-              Our structured 4-step deployment gets your team comfortably settled without administrative drag.
-            </p>
-          </div>
+          <div className="rounded-3xl p-8 md:p-10 shadow-xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-6"
+            style={{
+              background: 'linear-gradient(135deg, #FF6B00 0%, #E05E00 100%)',
+              color: '#FFFFFF'
+            }}
+          >
+            <div className="flex items-center gap-5">
+              <div className="w-16 h-16 rounded-2xl bg-white text-[#FF6B00] flex items-center justify-center shrink-0 shadow-md">
+                <Building2 size={32} />
+              </div>
+              <div>
+                <h3 className="font-heading font-extrabold text-xl md:text-2xl text-white uppercase tracking-tight">
+                  Let Us Simplify Your Accommodation Needs
+                </h3>
+                <p className="text-xs md:text-sm text-white/90 mt-1 max-w-2xl leading-relaxed">
+                  Share your location, budget, team size and duration. We will coordinate suitable available options according to your requirements.
+                </p>
+                <p className="text-xs text-white/80 font-semibold mt-2">
+                  CorpHub Solution — One Coordinated Channel for Multiple Industrial Requirements.
+                </p>
+              </div>
+            </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {PROCESS_STEPS.map((step, idx) => (
-              <ScrollReveal key={idx} delay={idx * 100}>
-                <div className="p-6 rounded-2xl bg-gray-50 border border-gray-100 relative h-full">
-                  <span className="font-display text-4xl font-extrabold text-navy-200 block mb-3">
-                    {step.step}
-                  </span>
-                  <h3 className="font-heading font-bold text-base text-navy-950 mb-2">
-                    {step.title}
-                  </h3>
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    {step.desc}
-                  </p>
-                </div>
-              </ScrollReveal>
-            ))}
+            <div className="shrink-0 w-full lg:w-auto">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full lg:w-auto inline-flex items-center justify-center gap-2 bg-[#071C3C] hover:bg-[#0A2E56] text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all text-sm uppercase tracking-wider"
+              >
+                Contact CorpHub <ArrowRight size={16} />
+              </a>
+            </div>
           </div>
         </div>
       </section>
-
-      {/* Enquiry CTA */}
-      <EnquiryCTA
-        title="Need workforce housing or executive guest houses?"
-        subtitle="Contact our Palanpur office for immediate availability, pricing estimates, and property site visits across Gujarat."
-        serviceName="Accommodation Services"
-      />
     </>
   );
 }

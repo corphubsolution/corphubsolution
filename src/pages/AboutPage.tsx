@@ -1,17 +1,18 @@
 import SEO from '../components/seo/SEO';
 import { Link } from 'react-router-dom';
 import { 
-  ShieldCheck, 
   Target, 
   Compass, 
-  MapPin, 
-  CheckCircle2, 
   Building2, 
   Car, 
   Package, 
   Users, 
   CalendarCheck,
-  ArrowRight
+  ArrowRight,
+  ShieldCheck,
+  Clock,
+  Sparkles,
+  Award
 } from 'lucide-react';
 import PageHero from '../components/sections/PageHero';
 import SectionLabel from '../components/ui/SectionLabel';
@@ -20,57 +21,34 @@ import EnquiryCTA from '../components/sections/EnquiryCTA';
 import Button from '../components/ui/Button';
 import { buildEnquiryLink } from '../utils/whatsapp';
 
-const CORE_VALUES = [
-  {
-    icon: ShieldCheck,
-    title: 'Operational Accountability',
-    desc: 'When we take on a project requirement, we own the delivery end-to-end so your project management team never has to follow up multiple vendors.',
-  },
-  {
-    icon: Target,
-    title: 'Single-Window Execution',
-    desc: 'Eliminate chaotic multi-vendor coordination. We unify accommodation, transport, material supply, vendor liaison, and event logistics under one roof.',
-  },
-  {
-    icon: MapPin,
-    title: 'Deep Local Ground Network',
-    desc: 'Headquartered in Palanpur, Banaskantha, our established vendor, transport, and real estate relationships across North Gujarat and beyond give you rapid turnaround.',
-  },
-  {
-    icon: Compass,
-    title: 'Integrity & Transparency',
-    desc: 'Transparent commercial terms, prompt response times, and dependable verified suppliers that match demanding corporate standards.',
-  },
-];
-
 const CAPABILITIES = [
   {
     icon: Building2,
-    title: 'Workforce Accommodation',
-    desc: 'Turnkey housing, guest houses, and rental arrangements for project staff, engineers, and executive teams close to site locations.',
+    title: 'Accommodation Management',
+    desc: 'Rental property arrangements, hotels, guest houses, and fully managed stays for project engineers and executive teams.',
     href: '/services/accommodation',
   },
   {
     icon: Car,
-    title: 'Corporate & Site Transport',
-    desc: 'Daily staff transit, site-to-city shuttles, airport transfers, and VIP vehicle fleets ensuring punctuality and safety.',
+    title: 'Transport Management',
+    desc: 'Customized corporate staff transit, site-to-city shuttles, airport transfers, and long-term project vehicle contracts.',
     href: '/services/transport',
   },
   {
     icon: Package,
-    title: 'Material & Equipment Supply',
+    title: 'Material Supply Management',
     desc: 'Direct sourcing of critical consumables, safety materials, construction supplies, and equipment without supply chain bottlenecks.',
     href: '/services/material-supply',
   },
   {
     icon: Users,
-    title: 'Vendor Ecosystem Management',
+    title: 'Vendor Management',
     desc: 'Supervision, screening, SLA follow-up, and paperwork coordination for local contractors and specialty service providers.',
     href: '/services/vendor-management',
   },
   {
     icon: CalendarCheck,
-    title: 'Corporate Event Management',
+    title: 'Event Management',
     desc: 'Complete logistics for project milestones, stakeholder conferences, vendor meets, safety training seminars, and launch ceremonies.',
     href: '/services/event-management',
   },
@@ -82,20 +60,38 @@ export default function AboutPage() {
   return (
     <>
       <SEO
-        title="About Us | CORPHUB SOLUTION — Industrial Support Partner Palanpur, Gujarat"
-        description="About CORPHUB SOLUTION in Palanpur, Gujarat: dedicated operations partner providing turnkey workforce housing, transport, material supply & site liaison."
+        title="About Us | CORPHUB SOLUTION — Industrial & Corporate Solutions"
+        description="At CorpHub Solution, we have been serving the industry for the past 3 years, providing integrated corporate and industrial support services tailored to project-based companies."
         canonicalPath="/about"
         ogImage="/assets/images/about-team.jpg"
+        keywords={[
+          'CorpHub Solution Palanpur',
+          'Industrial project support company Gujarat',
+          'Corporate solutions partner India',
+          'Single point contact industrial services',
+          'Vendor coordination partner Banaskantha',
+          'Project logistics Gujarat'
+        ]}
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'About Us', href: '/about' },
+        ]}
+        faqSchema={[
+          {
+            question: 'What is CorpHub Solution’s background and experience?',
+            answer: 'CorpHub Solution has been serving the industrial and corporate sector for over 3 years, specializing in turnkey support for project-based companies executing operations outside their home locations across Gujarat.',
+          },
+          {
+            question: 'What core services does CorpHub Solution provide?',
+            answer: 'CorpHub Solution provides Accommodation Management, Transport Management, Material Supply Management, Vendor Management, and Event Management through a single point of contact.',
+          },
         ]}
       />
 
       {/* Hero */}
       <PageHero
-        title="Empowering Industrial Projects Across Gujarat"
-        subtitle="About CORPHUB SOLUTION"
+        title="ABOUT US — CORPHUB SOLUTION"
+        subtitle="Your Trusted Partner for Industrial & Corporate Solutions"
         image="/assets/images/about-team.jpg"
         breadcrumbs={[
           { label: 'Home', href: '/' },
@@ -103,7 +99,7 @@ export default function AboutPage() {
         ]}
       />
 
-      {/* Intro Story */}
+      {/* Main Story / Who We Are */}
       <section className="section-py" style={{ background: '#FFFFFF' }}>
         <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -119,37 +115,51 @@ export default function AboutPage() {
                     lineHeight: 1.15,
                   }}
                 >
-                  Your On-Ground Operations Partner in Western India
+                  Your Trusted Partner for Industrial & Corporate Solutions
                 </h2>
-                <p className="text-base leading-relaxed mb-4" style={{ color: '#4B5563' }}>
-                  At <strong style={{ color: '#071C3C' }}>CORPHUB SOLUTION</strong>, we recognize that large industrial and infrastructure projects succeed or stumble on ground-level logistics. Mobilising engineers, sourcing materials on tight deadlines, managing vehicle rosters, and tracking dozens of suppliers takes vital focus away from core engineering objectives.
+                
+                <p className="text-base leading-relaxed mb-4 text-gray-700">
+                  At <strong className="text-navy-950 font-bold">CorpHub Solution</strong>, we have been serving the industry for the past <strong className="text-primary-orange font-bold">3 years</strong>, providing integrated corporate and industrial support services tailored to the needs of project-based companies.
                 </p>
-                <p className="text-base leading-relaxed mb-6" style={{ color: '#4B5563' }}>
-                  Headquartered in Palanpur (Banaskantha District, Gujarat), CORPHUB SOLUTION was established to eliminate this friction. We act as an integrated extension of your administration and project management teams, taking complete ownership of site support services so your deliverables stay on schedule and within budget.
+
+                <p className="text-base leading-relaxed mb-4 text-gray-600">
+                  We specialize in supporting companies executing projects outside their usual operating locations by coordinating essential services for their engineers, project managers, site teams, and corporate departments.
+                </p>
+
+                <p className="text-base leading-relaxed mb-4 text-gray-600">
+                  We understand that every project has unique requirements, budgets, timelines, documentation procedures, and terms and conditions. Our goal is to simplify these challenges by providing multiple services through a single point of contact, ensuring efficient coordination and customized solutions according to each client's needs.
+                </p>
+
+                <p className="text-base leading-relaxed mb-4 text-gray-600">
+                  Our services include <strong className="text-navy-900 font-semibold">Accommodation Management, Transport Management, Material Supply Management, Vendor Management, and Event Management</strong>. We focus on delivering reliable, cost-effective, and timely solutions that align with our clients' requirements and agreed terms and conditions.
+                </p>
+
+                <p className="text-base leading-relaxed mb-6 text-gray-600">
+                  At CorpHub Solution, we aim to build long-term business relationships through professional coordination, dependable service, and a commitment to customer satisfaction.
                 </p>
 
                 {/* Tagline Callout */}
                 <div
-                  className="p-6 rounded-xl border-l-4 mb-8"
+                  className="p-6 rounded-xl border-l-4 mb-8 shadow-sm"
                   style={{
                     background: '#F3F7FA',
                     borderColor: '#FF6B00',
                   }}
                 >
-                  <p className="font-heading font-bold text-lg mb-1" style={{ color: '#071C3C' }}>
-                    "Your Project. Our Responsibility."
+                  <p className="font-heading font-extrabold text-xl mb-1" style={{ color: '#071C3C' }}>
+                    "CorpHub Solution — Your Requirements, Our Responsibility."
                   </p>
-                  <p className="text-sm" style={{ color: '#6B7A8D' }}>
-                    Not just a slogan, but our operational commitment to deliver dependable ground support from mobilisation through plant commissioning.
+                  <p className="text-sm text-gray-600">
+                    Not just a slogan, but our operational commitment to deliver dependable ground support from mobilisation through completion.
                   </p>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
                   <Button variant="primary" href={whatsappUrl} external>
-                    Speak With Our Team
+                    Connect With Us
                   </Button>
                   <Button variant="secondary" href="/contact">
-                    Send Project RFP
+                    Share Requirements
                   </Button>
                 </div>
               </ScrollReveal>
@@ -169,24 +179,29 @@ export default function AboutPage() {
                     style={{ background: '#FF6B00' }}
                   />
 
-                  <h3
-                    className="font-heading font-bold text-xl mb-6 text-white border-b border-white/10 pb-4"
-                    style={{ color: '#FFFFFF' }}
-                  >
-                    Key Highlights
-                  </h3>
+                  <div className="flex items-center gap-3 border-b border-white/10 pb-4 mb-6">
+                    <div className="w-10 h-10 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center">
+                      <Award size={24} />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-bold text-xl text-white">
+                        3+ Years of Service
+                      </h3>
+                      <p className="text-xs text-white/70">Trusted by Industrial Project Teams</p>
+                    </div>
+                  </div>
 
-                  <div className="space-y-6">
+                  <div className="space-y-5">
                     <div className="flex items-start gap-4">
                       <div
                         className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
                         style={{ background: 'rgba(255, 107, 0, 0.15)', color: '#FF6B00' }}
                       >
-                        <CheckCircle2 size={20} />
+                        <Building2 size={20} />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white text-base">5 Core Service Verticals</h4>
-                        <p className="text-xs text-white/70 mt-1">One consolidated partner for accommodation, transport, materials, vendors, and events.</p>
+                        <h4 className="font-semibold text-white text-base">Single Point of Contact</h4>
+                        <p className="text-xs text-white/70 mt-1">One channel for housing, transport, material supply, vendor liaisons, and events.</p>
                       </div>
                     </div>
 
@@ -195,11 +210,11 @@ export default function AboutPage() {
                         className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
                         style={{ background: 'rgba(255, 107, 0, 0.15)', color: '#FF6B00' }}
                       >
-                        <CheckCircle2 size={20} />
+                        <Clock size={20} />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white text-base">Rapid Response Mobilisation</h4>
-                        <p className="text-xs text-white/70 mt-1">Quick turnarounds for immediate accommodation leases or emergency material dispatches.</p>
+                        <h4 className="font-semibold text-white text-base">Budget & Timeline Focused</h4>
+                        <p className="text-xs text-white/70 mt-1">Customized solutions tailored to project budgets, timelines, and documentation.</p>
                       </div>
                     </div>
 
@@ -208,11 +223,11 @@ export default function AboutPage() {
                         className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
                         style={{ background: 'rgba(255, 107, 0, 0.15)', color: '#FF6B00' }}
                       >
-                        <CheckCircle2 size={20} />
+                        <ShieldCheck size={20} />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white text-base">Verified Regional Suppliers</h4>
-                        <p className="text-xs text-white/70 mt-1">Audited local vendors, licensed drivers, and checked accommodation properties.</p>
+                        <h4 className="font-semibold text-white text-base">Verified Partner Network</h4>
+                        <p className="text-xs text-white/70 mt-1">Dependable, verified service providers delivering right services at the right place and time.</p>
                       </div>
                     </div>
 
@@ -221,11 +236,11 @@ export default function AboutPage() {
                         className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
                         style={{ background: 'rgba(255, 107, 0, 0.15)', color: '#FF6B00' }}
                       >
-                        <CheckCircle2 size={20} />
+                        <Sparkles size={20} />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white text-base">Corporate Compliance & GST</h4>
-                        <p className="text-xs text-white/70 mt-1">Transparent documentation, structured invoicing, and standard commercial compliance.</p>
+                        <h4 className="font-semibold text-white text-base">Long-Term Relationships</h4>
+                        <p className="text-xs text-white/70 mt-1">Commitment to customer satisfaction, professional coordination, and dependable service.</p>
                       </div>
                     </div>
                   </div>
@@ -236,11 +251,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Core Principles */}
+      {/* Mission & Vision Section */}
       <section className="section-py" style={{ background: '#F8FAFC' }}>
         <div className="container-site">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <SectionLabel text="Our Values" />
+            <SectionLabel text="Purpose & Aspiration" />
             <h2
               className="font-display mt-2"
               style={{
@@ -249,39 +264,55 @@ export default function AboutPage() {
                 color: '#071C3C',
               }}
             >
-              Built on Trust, Delivered with Precision
+              Our Mission & Vision
             </h2>
-            <p className="text-sm mt-3" style={{ color: '#6B7A8D' }}>
-              Every engagement is governed by four core operating standards designed to ensure zero downtime for your operations.
+            <p className="text-sm mt-3 text-gray-500">
+              Guiding our operations, client partnerships, and continuous pursuit of excellence across Gujarat.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {CORE_VALUES.map((item, idx) => {
-              const Icon = item.icon;
-              return (
-                <ScrollReveal key={idx} delay={idx * 100}>
-                  <div
-                    className="p-8 rounded-xl bg-white border border-gray-100 shadow-sm h-full flex flex-col justify-between hover:shadow-md transition-shadow"
-                  >
-                    <div>
-                      <div
-                        className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
-                        style={{ background: 'rgba(10, 46, 86, 0.08)', color: '#0A2E56' }}
-                      >
-                        <Icon size={24} />
-                      </div>
-                      <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#071C3C' }}>
-                        {item.title}
-                      </h3>
-                      <p className="text-sm leading-relaxed" style={{ color: '#6B7A8D' }}>
-                        {item.desc}
-                      </p>
-                    </div>
-                  </div>
-                </ScrollReveal>
-              );
-            })}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Mission Card */}
+            <ScrollReveal delay={100}>
+              <div className="p-8 md:p-10 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
+                <div
+                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
+                  style={{ background: 'rgba(255, 107, 0, 0.1)', color: '#FF6B00' }}
+                >
+                  <Target size={28} />
+                </div>
+                <h3 className="font-heading font-extrabold text-2xl mb-4" style={{ color: '#071C3C' }}>
+                  OUR MISSION
+                </h3>
+                <p className="text-base font-semibold mb-3 text-navy-900 leading-snug">
+                  Our mission is to fulfil diverse industrial and corporate requirements through a single, reliable, and efficient service partner.
+                </p>
+                <p className="text-sm leading-relaxed text-gray-600 mt-auto">
+                  We strive to provide suitable solutions according to our clients' budgets, requirements, documentation, and agreed terms and conditions. By coordinating with companies, engineers, project managers, and suitable service providers, we aim to simplify operations, reduce coordination challenges, and deliver the right services at the right place and time.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* Vision Card */}
+            <ScrollReveal delay={200}>
+              <div className="p-8 md:p-10 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
+                <div
+                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
+                  style={{ background: 'rgba(10, 46, 86, 0.1)', color: '#0A2E56' }}
+                >
+                  <Compass size={28} />
+                </div>
+                <h3 className="font-heading font-extrabold text-2xl mb-4" style={{ color: '#071C3C' }}>
+                  OUR VISION
+                </h3>
+                <p className="text-base font-semibold mb-3 text-navy-900 leading-snug">
+                  Our vision is to become a trusted corporate solutions partner for businesses across Gujarat by building a strong network of reliable and verified vendors.
+                </p>
+                <p className="text-sm leading-relaxed text-gray-600 mt-auto">
+                  We aspire to create a seamless coordination experience where companies, engineers, and project managers can access the services they need at their project locations, according to their budgets, specifications, and requirements. Through transparency, efficient coordination, and customized solutions, we aim to make industrial and corporate operations simpler, smoother, and more efficient.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -290,7 +321,7 @@ export default function AboutPage() {
       <section className="section-py" style={{ background: '#FFFFFF' }}>
         <div className="container-site">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <SectionLabel text="What We Deliver" />
+            <SectionLabel text="Our Services" />
             <h2
               className="font-display mt-2"
               style={{
@@ -301,8 +332,8 @@ export default function AboutPage() {
             >
               5 Dedicated Project Service Verticals
             </h2>
-            <p className="text-sm mt-3" style={{ color: '#6B7A8D' }}>
-              Select a service vertical to view dedicated service scopes, fleet options, and past delivery frameworks.
+            <p className="text-sm mt-3 text-gray-500">
+              Multiple industrial and corporate services managed through a single point of contact.
             </p>
           </div>
 
@@ -339,88 +370,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Regional Reach & Hubs */}
-      <section className="section-py" style={{ background: '#071C3C', color: '#FFFFFF' }}>
-        <div className="container-site">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <div className="lg:col-span-6">
-              <ScrollReveal>
-                <span className="section-label section-label--light mb-3 inline-block">
-                  Regional Focus
-                </span>
-                <h2
-                  className="font-display text-white mb-6"
-                  style={{
-                    fontSize: 'clamp(2rem, 3.5vw, 2.75rem)',
-                    fontWeight: 800,
-                    lineHeight: 1.15,
-                  }}
-                >
-                  Based in Palanpur, Serving Gujarat’s Key Industrial Belts
-                </h2>
-                <p className="text-sm leading-relaxed text-white/80 mb-6">
-                  Palanpur sits as a prime logistical hub bridging Northern Gujarat with Rajasthan and Western freight corridors. We actively support operations across industrial clusters including:
-                </p>
-
-                <div className="grid grid-cols-2 gap-4 mb-8">
-                  <div className="border border-white/10 rounded-lg p-3 bg-white/5">
-                    <p className="font-bold text-white text-sm">Banaskantha & Patan</p>
-                    <p className="text-xs text-white/60">Solar parks, agricultural processing, dairy & roads</p>
-                  </div>
-                  <div className="border border-white/10 rounded-lg p-3 bg-white/5">
-                    <p className="font-bold text-white text-sm">Mehsana & Chhatral</p>
-                    <p className="text-xs text-white/60">Engineering, oil & gas, manufacturing estates</p>
-                  </div>
-                  <div className="border border-white/10 rounded-lg p-3 bg-white/5">
-                    <p className="font-bold text-white text-sm">Sanand & Mandal-Becharaji</p>
-                    <p className="text-xs text-white/60">Automotive hubs and electronics parks</p>
-                  </div>
-                  <div className="border border-white/10 rounded-lg p-3 bg-white/5">
-                    <p className="font-bold text-white text-sm">Ahmedabad & Beyond</p>
-                    <p className="text-xs text-white/60">Corporate headquarters & multi-site project corridors</p>
-                  </div>
-                </div>
-
-                <Button variant="orange" href={whatsappUrl} external>
-                  Discuss Your Project Location
-                </Button>
-              </ScrollReveal>
-            </div>
-
-            <div className="lg:col-span-6">
-              <ScrollReveal delay={200}>
-                <div className="rounded-2xl border border-white/15 p-8 bg-white/5 backdrop-blur-sm">
-                  <h3
-                    className="font-heading font-bold text-xl text-white mb-4"
-                    style={{ color: '#FFFFFF' }}
-                  >
-                    Our Direct Commitment to You
-                  </h3>
-                  <div className="space-y-4 text-sm text-white/80 leading-relaxed">
-                    <p>
-                      <strong>1. Clear Scope & Transparent Pricing:</strong> We believe in clear quotes without hidden operational surcharges.
-                    </p>
-                    <p>
-                      <strong>2. Dedicated Project Coordinator:</strong> Every client is assigned a designated coordinator accessible 24/7 during critical project phases.
-                    </p>
-                    <p>
-                      <strong>3. Safety & Compliance First:</strong> We only work with vetted transport drivers, certified equipment, and secure accommodation facilities.
-                    </p>
-                    <p>
-                      <strong>4. Flexible Durations:</strong> Need accommodations or transport for two weeks, six months, or two years? We adapt to your contract length.
-                    </p>
-                  </div>
-                </div>
-              </ScrollReveal>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Enquiry CTA Section */}
       <EnquiryCTA
-        title="Ready to streamline your project support in Gujarat?"
-        subtitle="Speak directly with our team in Palanpur to receive tailored quotes for accommodation, transport, materials, and vendor management."
+        title="CorpHub Solution — Your Requirements, Our Responsibility."
+        subtitle="Speak directly with our team in Palanpur to receive customized solutions according to your budget, timeline, and project requirements."
       />
     </>
   );

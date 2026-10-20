@@ -5,14 +5,21 @@ export interface BreadcrumbItem {
   href?: string;
 }
 
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 interface SEOProps {
   title: string;
   description: string;
+  keywords?: string[] | string;
   canonicalPath?: string;
   ogImage?: string;
   ogType?: 'website' | 'article';
   noindex?: boolean;
   breadcrumbs?: BreadcrumbItem[];
+  faqSchema?: FAQItem[];
   serviceSchema?: {
     name: string;
     description: string;
@@ -20,18 +27,20 @@ interface SEOProps {
   };
 }
 
-const SITE_URL = 'https://corphubsolution.in';
-const DEFAULT_IMAGE = '/assets/images/hero-home.jpg';
+const SITE_URL = 'https://corphubsolution.vercel.app';
+const DEFAULT_IMAGE = '/assets/images/home.png';
 const LOGO_URL = `${SITE_URL}/assets/logo/logo-main.png`;
 
 export default function SEO({
   title,
   description,
+  keywords,
   canonicalPath = '',
   ogImage = DEFAULT_IMAGE,
   ogType = 'website',
   noindex = false,
   breadcrumbs,
+  faqSchema,
   serviceSchema,
 }: SEOProps) {
   // Canonical strictly points to the preferred production domain to prevent duplicate indexing across Vercel preview URLs
@@ -48,6 +57,29 @@ export default function SEO({
     ? ogImage
     : `${activeOrigin}${ogImage.startsWith('/') ? ogImage : `/${ogImage}`}`;
 
+  const keywordsString = Array.isArray(keywords) ? keywords.join(', ') : keywords;
+
+  // WebSite Schema for Brand Recognition & Search Sitelinks across Gujarat
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
+    name: 'CORPHUB SOLUTION',
+    alternateName: [
+      'CorpHub Solution',
+      'CorpHub',
+      'Corp Hub Solution',
+      'Corphub Solution Gujarat',
+      'CORPHUB SOLUTION GUJARAT',
+      'CorpHub Solution Palanpur'
+    ],
+    url: SITE_URL,
+    inLanguage: 'en-IN',
+    publisher: {
+      '@id': `${SITE_URL}/#organization`,
+    },
+  };
+
   // Organization / LocalBusiness Schema (Always included as base)
   const organizationSchema = {
     '@context': 'https://schema.org',
@@ -55,15 +87,30 @@ export default function SEO({
     '@id': `${SITE_URL}/#organization`,
     name: 'CORPHUB SOLUTION',
     legalName: 'CORPHUB SOLUTION',
+    alternateName: [
+      'CorpHub Solution',
+      'CorpHub',
+      'Corp Hub Solution',
+      'Corphub Solution Gujarat'
+    ],
+    slogan: 'Your Project. Our Responsibility.',
+    description: 'Premier B2B corporate and industrial project support partner across Gujarat. We coordinate accommodation, transportation, material supply, vendor management, and event management for industrial companies, EPC firms, and contractors.',
     url: SITE_URL,
     logo: LOGO_URL,
     image: imageUrl,
     telephone: '+919157060290',
     email: 'corphubsolution@gmail.com',
+    priceRange: '₹₹',
+    currenciesAccepted: 'INR',
+    paymentAccepted: 'Bank Transfer, Cheque, Online',
+    sameAs: [
+      'https://www.instagram.com/corphub_solution/'
+    ],
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Palanpur',
       addressRegion: 'Gujarat',
+      postalCode: '385001',
       addressCountry: 'IN',
     },
     geo: {
@@ -72,10 +119,72 @@ export default function SEO({
       longitude: '72.4346',
     },
     areaServed: [
+      { '@type': 'AdministrativeArea', name: 'Gujarat' },
+      { '@type': 'City', name: 'Ahmedabad' },
+      { '@type': 'City', name: 'Surat' },
+      { '@type': 'City', name: 'Vadodara' },
+      { '@type': 'City', name: 'Rajkot' },
+      { '@type': 'City', name: 'Gandhinagar' },
+      { '@type': 'City', name: 'Mehsana' },
+      { '@type': 'City', name: 'Sanand' },
       { '@type': 'City', name: 'Palanpur' },
       { '@type': 'AdministrativeArea', name: 'Banaskantha' },
-      { '@type': 'AdministrativeArea', name: 'Gujarat' },
+      { '@type': 'City', name: 'Deesa' },
+      { '@type': 'City', name: 'Bharuch' },
+      { '@type': 'City', name: 'Ankleshwar' },
+      { '@type': 'City', name: 'Dahej' },
+      { '@type': 'City', name: 'Morbi' },
+      { '@type': 'City', name: 'Jamnagar' },
+      { '@type': 'City', name: 'Bhavnagar' },
+      { '@type': 'City', name: 'Kutch' },
+      { '@type': 'City', name: 'Vapi' },
     ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Industrial Support Services in Gujarat',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Corporate & Industrial Accommodation Solutions',
+            url: `${SITE_URL}/services/accommodation`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Customized Corporate Transportation Solutions',
+            url: `${SITE_URL}/services/transport`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Industrial Material Sourcing & Supply',
+            url: `${SITE_URL}/services/material-supply`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Industrial Vendor Management & Site Liaison',
+            url: `${SITE_URL}/services/vendor-management`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Corporate & Industrial Event Management',
+            url: `${SITE_URL}/services/event-management`,
+          },
+        },
+      ],
+    },
   };
 
   // Breadcrumbs Schema if provided
@@ -116,15 +225,33 @@ export default function SEO({
     };
   }
 
+  // FAQPage Schema if provided
+  let faqJsonLd = null;
+  if (faqSchema && faqSchema.length > 0) {
+    faqJsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqSchema.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
+    };
+  }
+
   return (
     <Helmet>
       {/* Primary Meta Tags */}
       <title>{title}</title>
       <meta name="title" content={title} />
       <meta name="description" content={description} />
+      {keywordsString && <meta name="keywords" content={keywordsString} />}
       <link rel="canonical" href={canonicalUrl} />
       {noindex && <meta name="robots" content="noindex, nofollow" />}
-      {!noindex && <meta name="robots" content="index, follow, max-image-preview:large" />}
+      {!noindex && <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />}
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />
@@ -142,6 +269,11 @@ export default function SEO({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={imageUrl} />
 
+      {/* WebSite Brand JSON-LD */}
+      <script type="application/ld+json">
+        {JSON.stringify(websiteSchema)}
+      </script>
+
       {/* Base Organization / LocalBusiness JSON-LD */}
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
@@ -158,6 +290,13 @@ export default function SEO({
       {serviceJsonLd && (
         <script type="application/ld+json">
           {JSON.stringify(serviceJsonLd)}
+        </script>
+      )}
+
+      {/* Optional FAQPage JSON-LD */}
+      {faqJsonLd && (
+        <script type="application/ld+json">
+          {JSON.stringify(faqJsonLd)}
         </script>
       )}
     </Helmet>

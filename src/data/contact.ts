@@ -11,4 +11,7 @@ export const CONTACT = {
     country: 'India',
     full: 'Palanpur, Banaskantha, Gujarat, India',
   },
+  social: {
+    instagram: 'https://www.instagram.com/corphub_solution/',
+  },
 } as const;

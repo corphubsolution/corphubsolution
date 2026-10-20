@@ -1,79 +1,114 @@
 import SEO from '../../components/seo/SEO';
 import { 
-  Users, 
-  ShieldCheck, 
-  FileCheck, 
-  ClipboardCheck, 
   Search, 
-  CheckCircle2, 
-  MessageSquareCheck, 
-  AlertCircle 
+  ClipboardCheck, 
+  CalendarClock, 
+  FileText, 
+  ArrowRight, 
+  MessageCircle, 
+  ExternalLink 
 } from 'lucide-react';
 import PageHero from '../../components/sections/PageHero';
-import SectionLabel from '../../components/ui/SectionLabel';
 import ScrollReveal from '../../components/ui/ScrollReveal';
-import FeatureItem from '../../components/ui/FeatureItem';
 import Button from '../../components/ui/Button';
-import EnquiryCTA from '../../components/sections/EnquiryCTA';
 import { buildEnquiryLink } from '../../utils/whatsapp';
 
-const VENDOR_SERVICES = [
+const CAPABILITIES = [
   {
     icon: Search,
-    title: 'Vendor Sourcing & Qualification',
-    badge: 'Due Diligence',
-    desc: 'Identifying and vetting regional trade contractors, equipment hirers, and service providers. We review their track record, equipment condition, safety compliance, and financial stability.',
-    deliverables: ['Detailed background & credibility checks', 'Review of past project references in Gujarat', 'Statutory compliance verification (GST, PAN, PF)', 'Comparative quotation evaluation matrix'],
+    title: 'Vendor Sourcing',
+    desc: 'Identify suitable local suppliers and service providers based on project needs.',
   },
   {
     icon: ClipboardCheck,
-    title: 'Milestone Tracking & SLA Enforcement',
-    badge: 'Operations',
-    desc: 'Bridging the distance between your corporate office and site contractors. We ensure vendors adhere strictly to agreed delivery schedules, quality specifications, and turnaround deadlines.',
-    deliverables: ['Daily / weekly progress site inspections', 'Active follow-up on delayed deliverables', 'Non-conformance notification and escalation', 'Transparent status reporting to project managers'],
+    title: 'Site Coordination',
+    desc: 'Coordinate site visits, vendor communication and project follow-ups.',
   },
   {
-    icon: FileCheck,
-    title: 'Documentation & Invoice Clearance',
-    badge: 'Admin & Finance',
-    desc: 'Preventing billing discrepancies and audit delays. We review measurement sheets, delivery challans, and completion certificates before invoices reach your finance department.',
-    deliverables: ['Verification of physical delivery challans', 'Scrutiny of measurement & timesheet logs', 'Alignment with purchase order terms', 'Clean audit-ready billing packages'],
+    icon: CalendarClock,
+    title: 'Milestone Tracking',
+    desc: 'Track agreed timelines, pending activities and reported progress.',
   },
   {
-    icon: MessageSquareCheck,
-    title: 'Ground Liaison & Conflict Resolution',
-    badge: 'On-Site Liaison',
-    desc: 'Managing real-world field situations with local vendors, community dynamics, and contract laborers. Our Palanpur-based team bridges linguistic and cultural nuances smoothly.',
-    deliverables: ['Native language communication (Gujarati/Hindi)', 'Fair dispute mediation and resolution', 'Community and local authority liaison', 'Continuity protection during contractor disputes'],
+    icon: FileText,
+    title: 'Documentation',
+    desc: 'Coordinate delivery records, supporting documents and reporting.',
+  },
+];
+
+const PROCESS_STEPS = [
+  {
+    step: '01',
+    title: 'Share',
+    desc: 'Project needs',
+  },
+  {
+    step: '02',
+    title: 'Source',
+    desc: 'Suitable vendors',
+  },
+  {
+    step: '03',
+    title: 'Coordinate',
+    desc: 'Follow-ups',
+  },
+  {
+    step: '04',
+    title: 'Review',
+    desc: 'Status & records',
   },
 ];
 
 export default function VendorManagementPage() {
-  const whatsappUrl = buildEnquiryLink('Vendor Management Support');
+  const whatsappUrl = buildEnquiryLink('Vendor Management & Site Liaison Support');
 
   return (
     <>
       <SEO
-        title="Vendor Management & Site Liaison Services | Palanpur, Gujarat | CORPHUB SOLUTION"
-        description="End-to-end vendor vetting, contract administration, SLA compliance tracking, and dispute management for industrial and engineering sites in Gujarat."
+        title="Reliable Vendors. Better Project Coordination. | CORPHUB SOLUTION"
+        description="Local supplier coordination, contractor follow-ups and on-site progress support for industrial projects across Gujarat. Sourcing, site coordination, milestone tracking, and documentation."
         canonicalPath="/services/vendor-management"
-        ogImage="/assets/images/vendor-management-hero.jpg"
+        ogImage="/assets/images/vender.png"
+        keywords={[
+          'Vendor management services Gujarat',
+          'Industrial site liaison Palanpur',
+          'Contractor follow-up coordination Banaskantha',
+          'Local supplier coordination Gujarat',
+          'EPC project vendor tracking',
+          'Site milestone tracking Palanpur',
+          'CorpHub Solution vendor management'
+        ]}
         breadcrumbs={[
           { label: 'Home', href: '/' },
+          { label: 'Services', href: '/#services' },
           { label: 'Vendor Management', href: '/services/vendor-management' },
         ]}
         serviceSchema={{
-          name: 'Vendor Management & Site Liaison',
-          description: 'Comprehensive vendor vetting, contract administration, rate negotiation, and local ground liaison in Gujarat.',
+          name: 'Industrial Vendor Management & Site Liaison',
+          description: 'Local supplier coordination, contractor follow-ups, and on-site progress management for industrial projects in Gujarat.',
           serviceType: 'Vendor Management & Ground Liaison Services',
         }}
+        faqSchema={[
+          {
+            question: 'What is Vendor Management by CorpHub Solution?',
+            answer: 'CorpHub Solution acts as your dedicated local coordination layer on the ground, handling vendor identification, site visits, contractor follow-ups, timeline tracking, and delivery documentation.',
+          },
+          {
+            question: 'How is Vendor Management different from Material Supply?',
+            answer: 'Vendor Management focuses purely on operational coordination, supervision, communication follow-ups, and paperwork liaison for contractors and service providers. Material Supply involves product procurement and physical delivery.',
+          },
+          {
+            question: 'Which areas do you provide on-site vendor liaison for?',
+            answer: 'We provide active on-site liaison across Palanpur, Banaskantha, Mehsana, Sanand, Ahmedabad, and key industrial belts across Gujarat.',
+          },
+        ]}
       />
 
-      {/* Hero */}
+      {/* Hero Header */}
       <PageHero
-        title="Industrial Vendor Management & Site Liaison"
-        subtitle="Operational Oversight"
-        image="/assets/images/vendor-management-hero.jpg"
+        title="Reliable Vendors. Better Project Coordination."
+        subtitle="Industrial Vendor Management & Site Liaison"
+        image="/assets/images/vender.png"
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/#services' },
@@ -81,152 +116,121 @@ export default function VendorManagementPage() {
         ]}
       />
 
-      {/* Overview */}
-      <section className="section-py" style={{ background: '#FFFFFF' }}>
-        <div className="container-site">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-7">
-              <ScrollReveal>
-                <SectionLabel text="Your Eyes & Ears on the Ground" />
-                <h2
-                  className="font-display mb-6"
+      {/* ── HERO CARD SECTION (Matching Reference UI Mockup) ────────────────── */}
+      <section className="py-10 md:py-14 bg-white">
+        <div className="container-site max-w-5xl">
+          <ScrollReveal>
+            <div 
+              className="rounded-3xl p-6 md:p-10 overflow-hidden shadow-2xl border border-gray-100"
+              style={{ background: '#071C3C', color: '#FFFFFF' }}
+            >
+              {/* Top Industrial Team Photo */}
+              <div className="relative rounded-2xl overflow-hidden shadow-lg mb-8 border border-white/10 group">
+                <img
+                  src="/assets/images/vender.png"
+                  alt="Industrial project team and engineers coordinating vendor management on site"
+                  className="w-full h-[260px] sm:h-[340px] md:h-[400px] object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#071C3C]/80 via-transparent to-transparent pointer-events-none" />
+                
+                <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-white/90">
+                  <span className="font-semibold bg-black/40 backdrop-blur-xs px-2.5 py-1 rounded-md border border-white/10">
+                    On-Site Project Coordination
+                  </span>
+                  <span className="text-[#FF6B00] font-bold bg-white/10 backdrop-blur-xs px-2.5 py-1 rounded-md">
+                    Palanpur & Gujarat
+                  </span>
+                </div>
+              </div>
+
+              {/* Text & Action Area */}
+              <div>
+                <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF6B00] mb-2.5 inline-block">
+                  Industrial Vendor Management
+                </span>
+
+                <h1
+                  className="font-display font-extrabold text-white mb-3"
                   style={{
-                    fontSize: 'clamp(2rem, 3.5vw, 2.75rem)',
-                    fontWeight: 800,
-                    color: '#071C3C',
+                    fontSize: 'clamp(2rem, 3.8vw, 3rem)',
                     lineHeight: 1.15,
                   }}
                 >
-                  Streamline Your Supplier Ecosystem with Dedicated Local Management
-                </h2>
-                <p className="text-base leading-relaxed mb-4 text-gray-600">
-                  Managing multiple local sub-contractors, transport operators, and material vendors from a corporate headquarters hundreds of kilometers away is difficult and fraught with miscommunication. Missed commitments, billing friction, and slow turnaround can silently derail your commissioning schedules.
-                </p>
-                <p className="text-base leading-relaxed mb-6 text-gray-600">
-                  <strong className="text-navy-900">CORPHUB SOLUTION</strong> acts as your dedicated local coordination layer in Gujarat. We establish accountability, monitor progress directly at the work front, handle documentation verification, and solve friction before it escalates into operational delays.
+                  Reliable Vendors. Better Project Coordination.
+                </h1>
+
+                <p className="text-xs sm:text-sm md:text-base text-white/80 leading-relaxed mb-8 max-w-2xl">
+                  Local supplier coordination, contractor follow-ups and on-site progress support for industrial projects across Gujarat.
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  <FeatureItem text="Single Point of Contact" description="Deal with our coordination desk rather than 20 individual vendors." />
-                  <FeatureItem text="Local Language Fluency" description="Native fluency in Gujarati and Hindi ensures crystal-clear instructions." />
-                  <FeatureItem text="Strict SLA Enforcement" description="Deadlines and milestone penalties tracked rigorously on site." />
-                  <FeatureItem text="Audit-Ready Paperwork" description="Clean delivery notes, tax invoices, and verification logs." />
-                </div>
-
-                <div className="flex flex-wrap gap-4">
-                  <Button variant="primary" href={whatsappUrl} external>
-                    Enquire on WhatsApp
-                  </Button>
-                  <Button variant="secondary" href="/contact">
-                    Discuss Vendor Retainer
-                  </Button>
-                </div>
-              </ScrollReveal>
-            </div>
-
-            <div className="lg:col-span-5">
-              <ScrollReveal delay={200}>
-                <div
-                  className="rounded-2xl p-8 text-white relative overflow-hidden shadow-xl"
-                  style={{ background: 'linear-gradient(135deg, #071C3C 0%, #0A2E56 100%)' }}
-                >
-                  <h3
-                    className="font-heading font-bold text-xl mb-4 border-b border-white/10 pb-3 text-white"
-                    style={{ color: '#FFFFFF' }}
+                <div className="flex flex-wrap items-center gap-4">
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#FF6B00] hover:bg-[#e05e00] text-white font-extrabold px-6 py-3.5 rounded-xl shadow-lg transition-all duration-200 text-xs sm:text-sm uppercase tracking-wider"
                   >
-                    Problems We Solve
-                  </h3>
-                  <div className="space-y-4 text-sm text-white/80">
-                    <div className="flex items-start gap-3">
-                      <AlertCircle className="shrink-0 text-orange-400 mt-1" size={18} />
-                      <div>
-                        <strong>Unaccountable Local Contractors:</strong> We enforce documented scopes, work schedules, and physical verification.
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <ShieldCheck className="shrink-0 text-orange-400 mt-1" size={18} />
-                      <div>
-                        <strong>Inflated Invoicing:</strong> Independent physical count and cross-referencing against delivery gate passes.
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Users className="shrink-0 text-orange-400 mt-1" size={18} />
-                      <div>
-                        <strong>Vendor Disputes:</strong> Fast mediation backed by deep understanding of local market practices.
-                      </div>
-                    </div>
-                  </div>
+                    <MessageCircle size={17} />
+                    <span>Enquire on WhatsApp</span>
+                    <ExternalLink size={14} />
+                  </a>
 
-                  <div className="mt-8 pt-4 border-t border-white/10">
-                    <p className="text-xs text-white/60">
-                      Need on-site coordination for an upcoming installation phase? Inquire about our monthly project retainer options.
-                    </p>
-                  </div>
+                  <Button
+                    to="/contact"
+                    variant="outline-white"
+                    size="lg"
+                    className="border-white/20 hover:bg-white/10 text-xs sm:text-sm"
+                  >
+                    Discuss Your Requirements
+                  </Button>
                 </div>
-              </ScrollReveal>
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="section-py" style={{ background: '#F8FAFC' }}>
-        <div className="container-site">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <SectionLabel text="Vendor Management Pillars" />
+      {/* ── OUR CAPABILITIES (2x2 Cards Grid) ─────────────────────────────────── */}
+      <section className="py-12 md:py-16 bg-white border-t border-gray-100">
+        <div className="container-site max-w-5xl">
+          <div className="text-center max-w-xl mx-auto mb-12">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF6B00] mb-2 inline-block">
+              Our Capabilities
+            </span>
             <h2
-              className="font-display mt-2"
+              className="font-display text-[#071C3C]"
               style={{
                 fontSize: 'clamp(1.75rem, 3vw, 2.5rem)',
                 fontWeight: 800,
-                color: '#071C3C',
               }}
             >
-              Comprehensive Contractor & Supplier Supervision
+              Complete Vendor Coordination
             </h2>
-            <p className="text-sm mt-3 text-gray-500">
-              Four specialized capabilities to maintain high contractor performance and cost control.
+            <div className="w-16 h-1 bg-[#FF6B00] mx-auto mt-3 rounded-full mb-3" />
+            <p className="text-xs sm:text-sm text-gray-500">
+              One coordination partner for your project requirements.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {VENDOR_SERVICES.map((srv, idx) => {
-              const Icon = srv.icon;
+          {/* 4 Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {CAPABILITIES.map((item, idx) => {
+              const Icon = item.icon;
               return (
-                <ScrollReveal key={idx} delay={idx * 100}>
-                  <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col justify-between">
+                <ScrollReveal key={idx} delay={idx * 80}>
+                  <div className="bg-white rounded-2xl p-7 border border-gray-200/80 hover:border-orange-300 hover:shadow-lg transition-all duration-300 h-full flex flex-col justify-between group">
                     <div>
-                      <div className="flex items-center justify-between mb-4">
-                        <div
-                          className="w-12 h-12 rounded-xl flex items-center justify-center"
-                          style={{ background: 'rgba(7, 28, 60, 0.08)', color: '#071C3C' }}
-                        >
-                          <Icon size={24} />
-                        </div>
-                        <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-navy-50 text-navy-800">
-                          {srv.badge}
-                        </span>
+                      <div className="w-12 h-12 rounded-2xl bg-orange-50 border border-orange-100 text-[#FF6B00] flex items-center justify-center mb-4 shadow-2xs group-hover:bg-[#FF6B00] group-hover:text-white transition-colors">
+                        <Icon size={24} />
                       </div>
-                      <h3 className="font-heading font-bold text-xl mb-3 text-navy-950">
-                        {srv.title}
-                      </h3>
-                      <p className="text-sm text-gray-600 leading-relaxed mb-6">
-                        {srv.desc}
-                      </p>
-                    </div>
 
-                    <div className="border-t border-gray-100 pt-5">
-                      <p className="text-xs font-bold text-navy-900 uppercase tracking-wider mb-3">
-                        Scope Deliverables:
+                      <h3 className="font-heading font-extrabold text-lg text-[#071C3C] group-hover:text-[#FF6B00] transition-colors mb-2">
+                        {item.title}
+                      </h3>
+
+                      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                        {item.desc}
                       </p>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                        {srv.deliverables.map((deliv, dIdx) => (
-                          <div key={dIdx} className="flex items-center gap-2 text-xs text-gray-600">
-                            <CheckCircle2 size={14} className="text-orange-500 shrink-0" />
-                            <span>{deliv}</span>
-                          </div>
-                        ))}
-                      </div>
                     </div>
                   </div>
                 </ScrollReveal>
@@ -236,12 +240,87 @@ export default function VendorManagementPage() {
         </div>
       </section>
 
-      {/* Enquiry CTA */}
-      <EnquiryCTA
-        title="Want dedicated oversight for your Gujarat project vendors?"
-        subtitle="Contact our Palanpur coordination office to discuss full-time or project-based vendor management services."
-        serviceName="Vendor Management Services"
-      />
+      {/* ── HOW IT WORKS (4 Circular Steps) ───────────────────────────────────── */}
+      <section className="py-14 md:py-18 bg-[#F3F7FA] border-t border-gray-200/60">
+        <div className="container-site max-w-5xl">
+          <div className="text-center max-w-xl mx-auto mb-12">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF6B00] mb-2 inline-block">
+              Workflow
+            </span>
+            <h2
+              className="font-display text-[#071C3C]"
+              style={{
+                fontSize: 'clamp(1.75rem, 3vw, 2.5rem)',
+                fontWeight: 800,
+              }}
+            >
+              How It Works
+            </h2>
+            <div className="w-16 h-1 bg-[#FF6B00] mx-auto mt-3 rounded-full" />
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6">
+            {PROCESS_STEPS.map((step, idx) => (
+              <ScrollReveal key={idx} delay={idx * 90}>
+                <div className="bg-white rounded-2xl p-5 md:p-6 border border-gray-200 text-center flex flex-col items-center shadow-2xs hover:shadow-md transition-shadow h-full">
+                  <div className="w-14 h-14 rounded-full bg-[#071C3C] text-white font-extrabold text-sm flex items-center justify-center shadow-md mb-3">
+                    {step.step}
+                  </div>
+                  <h4 className="font-heading font-extrabold text-sm text-[#071C3C] mb-1">
+                    {step.title}
+                  </h4>
+                  <p className="text-xs text-gray-500">
+                    {step.desc}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── NEED LOCAL PROJECT SUPPORT? (Bottom CTA Banner) ──────────────────── */}
+      <section className="py-12 md:py-16 bg-white border-t border-gray-100">
+        <div className="container-site max-w-5xl">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2
+              className="font-display font-extrabold text-[#071C3C]"
+              style={{
+                fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)',
+              }}
+            >
+              Need Local Project Support?
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-600 mt-2">
+              Share your project location, requirements and coordination needs with CorpHub Solution.
+            </p>
+          </div>
+
+          <div className="text-center">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-[#FF6B00] hover:bg-[#e05e00] text-white font-extrabold px-8 sm:px-12 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-sm sm:text-base uppercase tracking-wider w-full sm:w-auto"
+            >
+              <span>Discuss Your Project Requirements</span>
+              <ArrowRight size={18} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FOOTER BANNER ─────────────────────────────────────────────────────── */}
+      <section className="py-8 bg-[#071C3C] text-white border-t border-white/10 text-center">
+        <div className="container-site">
+          <p className="font-heading font-extrabold text-lg tracking-wider text-white">
+            CORPHUB <span className="text-[#FF6B00]">SOLUTION</span>
+          </p>
+          <p className="text-xs text-white/70 mt-1 uppercase tracking-widest">
+            — Your Project. Our Responsibility. —
+          </p>
+        </div>
+      </section>
     </>
   );
 }
