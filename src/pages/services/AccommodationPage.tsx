@@ -80,18 +80,37 @@ export default function AccommodationPage() {
   return (
     <>
       <SEO
-        title="Corporate & Industrial Accommodation Solutions | CORPHUB SOLUTION"
-        description="The Right Stay. The Right Support. One Coordinated Solution. We help corporate and industrial companies arrange suitable accommodation for employees, visiting professionals and project teams."
+        title="Corporate & Industrial Accommodation Solutions in Gujarat | Staff Housing & Guest House | CORPHUB SOLUTION"
+        description="CORPHUB SOLUTION arranges corporate accommodation, workforce housing, executive guest houses & serviced apartments for industrial projects near Sanand GIDC, Ahmedabad, Gandhinagar, Vadodara & Palanpur. Flexible PO-based booking, managed stays & competitive corporate rates."
         canonicalPath="/services/accommodation"
         ogImage="/assets/images/accommodation-hero.png"
         keywords={[
-          'Corporate accommodation Palanpur Gujarat',
-          'Industrial workforce housing Gujarat',
-          'Turnkey engineer guest house Banaskantha',
+          'CORPHUB SOLUTION accommodation',
+          'corporate accommodation Gujarat',
+          'corporate guest house near Sanand GIDC',
+          'workforce accommodation solutions for industrial projects Gujarat',
+          'staff accommodation near GIDC industrial estate',
+          'industrial workforce housing Gujarat',
+          'executive accommodation in Ahmedabad',
+          'turnkey engineer guest house Banaskantha',
           'EPC project staff flats Palanpur',
-          'Serviced apartments industrial Gujarat',
-          'Corporate guest house booking PO basis',
-          'CorpHub Solution accommodation'
+          'serviced apartments for engineers near Naroda GIDC',
+          'fully furnished flats for staff on rent Gujarat',
+          'project-based staff housing and dormitories Gujarat',
+          'corporate guest house with mess and food services Gujarat',
+          'managed guest house with housekeeping services',
+          'PG for engineers near factory Gujarat',
+          'budget corporate guest house for construction teams',
+          'short term accommodation for visiting engineers Gujarat',
+          'long stay corporate housing for audit teams',
+          'corporate accommodation PO basis booking Gujarat',
+          'industrial guest house near Vatva GIDC Ahmedabad',
+          'managed accommodation with WiFi and laundry Gujarat',
+          'rental property arrangement for industrial workers',
+          'hotel accommodation corporate rates Palanpur Mehsana',
+          'B2B corporate accommodation service provider Gujarat',
+          'factory staff housing near Sanand Mehsana Vadodara',
+          'CorpHub Solution accommodation services'
         ]}
         breadcrumbs={[
           { label: 'Home', href: '/' },
@@ -100,21 +119,29 @@ export default function AccommodationPage() {
         ]}
         serviceSchema={{
           name: 'Corporate & Industrial Accommodation Solutions',
-          description: 'Rental property arrangements, hotel & guest houses, and managed accommodation for industrial companies and project teams in Gujarat.',
+          description: 'CORPHUB SOLUTION arranges rental properties, corporate hotel bookings, managed guest houses, and serviced executive apartments for industrial project teams, visiting engineers, and corporate employees across Gujarat.',
           serviceType: 'Corporate Accommodation Services',
         }}
         faqSchema={[
           {
-            question: 'How does CorpHub Solution coordinate accommodation for industrial projects in Gujarat?',
-            answer: 'CorpHub Solution provides end-to-end rental property sourcing, corporate hotel bookings, and managed executive guest houses across Palanpur, Banaskantha, and Gujarat with single-point coordination and flexible lease options.',
+            question: 'How does CORPHUB SOLUTION coordinate accommodation for industrial projects in Gujarat?',
+            answer: 'CORPHUB SOLUTION provides end-to-end rental property sourcing, corporate hotel bookings, and managed executive guest houses across Palanpur, Banaskantha, Sanand, Ahmedabad, Gandhinagar, Vadodara, and Gujarat with single-point coordination, flexible lease options, and competitive corporate rates.',
           },
           {
             question: 'Can companies book project accommodation under PO or official credit terms?',
-            answer: 'Yes, CorpHub Solution accepts corporate booking requests through Purchase Orders (PO) or official email agreements, with no advance payment required for eligible corporate clients under approved written credit terms.',
+            answer: 'Yes, CORPHUB SOLUTION accepts corporate booking requests through Purchase Orders (PO) or official email agreements, with no advance payment required for eligible corporate clients under approved written credit terms.',
           },
           {
-            question: 'What is included in managed accommodation services?',
-            answer: 'Managed accommodation includes housekeeping coordination, maintenance management, electricity/water/gas bill settlement, high-speed Wi-Fi internet, and laundry services.',
+            question: 'What is included in managed accommodation services by CORPHUB SOLUTION?',
+            answer: 'Managed accommodation includes housekeeping coordination, maintenance management, electricity/water/gas bill settlement, high-speed Wi-Fi internet, laundry services, and 24x7 support coordination.',
+          },
+          {
+            question: 'Does CORPHUB SOLUTION provide accommodation near industrial estates and GIDC areas?',
+            answer: 'Yes. CORPHUB SOLUTION arranges workforce housing and corporate guest houses near major GIDC industrial estates including Sanand, Vatva, Naroda, Changodar, Mehsana, and Palanpur to minimize commute time for project staff and engineers.',
+          },
+          {
+            question: 'What types of accommodation does CORPHUB SOLUTION offer for different team sizes?',
+            answer: 'We offer flexible accommodation options including 1BHK/2BHK/3BHK fully furnished flats, corporate guest houses, premium serviced apartments with workspaces, budget PG and dormitory arrangements, and hotel rooms at negotiated corporate rates — scalable for teams of 2 to 100+ members.',
           },
         ]}
       />

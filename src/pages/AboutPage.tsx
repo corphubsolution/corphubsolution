@@ -60,17 +60,31 @@ export default function AboutPage() {
   return (
     <>
       <SEO
-        title="About Us | CORPHUB SOLUTION — Industrial & Corporate Solutions"
-        description="At CorpHub Solution, we have been serving the industry for the past 3 years, providing integrated corporate and industrial support services tailored to project-based companies."
+        title="About CORPHUB SOLUTION | Industrial & Corporate Support Services Company in Gujarat"
+        description="CORPHUB SOLUTION is a Gujarat-based B2B industrial support company headquartered in Palanpur, Banaskantha. 3+ years of experience providing integrated accommodation, transportation, material supply, vendor management & event management services for factories, EPC firms & infrastructure projects."
         canonicalPath="/about"
         ogImage="/assets/images/about-team.jpg"
         keywords={[
-          'CorpHub Solution Palanpur',
-          'Industrial project support company Gujarat',
-          'Corporate solutions partner India',
-          'Single point contact industrial services',
-          'Vendor coordination partner Banaskantha',
-          'Project logistics Gujarat'
+          'about CORPHUB SOLUTION',
+          'CORPHUB SOLUTION Palanpur',
+          'CorpHub Solution company profile',
+          'industrial project support company Gujarat',
+          'B2B industrial service provider Gujarat',
+          'corporate solutions partner Gujarat',
+          'single point contact industrial services India',
+          'vendor coordination partner Banaskantha',
+          'project logistics company Gujarat',
+          'industrial support outsourcing Gujarat',
+          'manufacturing project support India',
+          'EPC support partner Gujarat',
+          'corporate accommodation transport vendor company',
+          'industrial coordination firm Palanpur Gujarat',
+          'turnkey project support services Gujarat',
+          'who is CorpHub Solution',
+          'CORPHUB SOLUTION services list',
+          'best industrial support company Gujarat',
+          'trusted corporate services partner Ahmedabad Gujarat',
+          'CorpHub Solution about us'
         ]}
         breadcrumbs={[
           { label: 'Home', href: '/' },
@@ -78,12 +92,20 @@ export default function AboutPage() {
         ]}
         faqSchema={[
           {
-            question: 'What is CorpHub Solution’s background and experience?',
-            answer: 'CorpHub Solution has been serving the industrial and corporate sector for over 3 years, specializing in turnkey support for project-based companies executing operations outside their home locations across Gujarat.',
+            question: 'What is CORPHUB SOLUTION and what does it do?',
+            answer: 'CORPHUB SOLUTION is a B2B industrial and corporate support services company headquartered in Palanpur, Gujarat. We provide integrated accommodation management, customized transportation, industrial material supply, vendor management, and corporate event management through a single point of contact for factories, EPC firms, and infrastructure projects across Gujarat.',
           },
           {
-            question: 'What core services does CorpHub Solution provide?',
-            answer: 'CorpHub Solution provides Accommodation Management, Transport Management, Material Supply Management, Vendor Management, and Event Management through a single point of contact.',
+            question: 'How many years of experience does CORPHUB SOLUTION have?',
+            answer: 'CORPHUB SOLUTION has been serving the industrial and corporate sector for over 3 years, specializing in turnkey support for project-based companies executing operations across Gujarat industrial corridors.',
+          },
+          {
+            question: 'What five core services does CORPHUB SOLUTION provide?',
+            answer: 'CORPHUB SOLUTION provides: (1) Corporate Accommodation Management, (2) Customized Transport Management, (3) Industrial Material Supply, (4) Vendor Management and Site Liaison, and (5) Corporate Event Management — all managed through a dedicated single point of contact.',
+          },
+          {
+            question: 'Where is CORPHUB SOLUTION headquartered and which areas does it serve?',
+            answer: 'CORPHUB SOLUTION is headquartered in Palanpur, Banaskantha district, Gujarat. We serve all major industrial hubs across Gujarat including Sanand, Ahmedabad, Gandhinagar, Vadodara, Mehsana, Bharuch, Dahej, and Northern Gujarat.',
           },
         ]}
       />

@@ -278,20 +278,38 @@ ${formData.fileName ? `📎 *Document Attached:* ${formData.fileName}` : ''}`;
   return (
     <>
       <SEO
-        title="Industrial Material Supply & Sourcing | CORPHUB SOLUTION"
-        description="Reliable industrial material sourcing and direct supply for factories, EPC firms, and contractors. Free vendor connection or direct quotation-based material supply."
+        title="Industrial Material Supply & Sourcing in Gujarat | Electrical, Civil, Mechanical | CORPHUB SOLUTION"
+        description="CORPHUB SOLUTION provides reliable industrial material sourcing and direct supply for factories, EPC firms & contractors in Gujarat. Free vendor connection or quotation-based direct supply for site cabins, electrical switchgear, cables, generators, steel, fasteners & automation components across Ahmedabad, Sanand, Vadodara & Palanpur."
         canonicalPath="/services/material-supply"
         ogImage="/assets/images/material-supply-hero.png"
         keywords={[
-          'Industrial material supply Gujarat',
-          'Industrial cabins containers Palanpur',
-          'Electrical switchgear panels supplier Gujarat',
-          'Industrial power cables supplier Banaskantha',
-          'Diesel generators industrial power Gujarat',
-          'Structural steel TMT bars supplier Palanpur',
-          'Mechanical valves pumps fittings Gujarat',
-          'Free vendor connection industrial materials Gujarat',
-          'Direct material supply CorpHub Solution'
+          'CORPHUB SOLUTION material supply',
+          'industrial material supply Gujarat',
+          'industrial electrical material suppliers Ahmedabad',
+          'electrical switchgear supplier Gujarat',
+          'low voltage switchgear suppliers Gujarat',
+          'industrial power cables supplier Banaskantha',
+          'portable site cabins supplier Gujarat',
+          'office cabin and security cabin manufacturer Gujarat',
+          'diesel generator supplier GIDC Gujarat',
+          'structural steel TMT bars supplier Palanpur',
+          'cement and construction materials supplier Gujarat',
+          'industrial hardware and fasteners dealer Ahmedabad',
+          'automation components PLC HMI VFD supplier Gujarat',
+          'mechanical valves pumps fittings supplier Gujarat',
+          'free vendor connection industrial materials Gujarat',
+          'direct material supply for EPC contractors Gujarat',
+          'industrial material procurement services India',
+          'bulk industrial raw material dealers Gujarat',
+          'electrical panels distribution boards supplier Gujarat',
+          'industrial cables wires wholesale Gujarat',
+          'site office furniture and workbench supplier Gujarat',
+          'roofing sheets and civil materials Gujarat',
+          'pneumatic hydraulic components supplier Ahmedabad',
+          'industrial LED lighting supplier Gujarat',
+          'cable trays and cable accessories Gujarat',
+          'quotation-based material supply for projects Gujarat',
+          'CorpHub Solution material supply services'
         ]}
         breadcrumbs={[
           { label: 'Home', href: '/' },
@@ -300,21 +318,29 @@ ${formData.fileName ? `📎 *Document Attached:* ${formData.fileName}` : ''}`;
         ]}
         serviceSchema={{
           name: 'Industrial Material Sourcing & Supply',
-          description: 'Industrial material procurement, vendor coordination, and direct supplies for EPC contractors, industrial sites, and infrastructure projects.',
+          description: 'CORPHUB SOLUTION provides industrial material procurement through free vendor connections and direct quotation-based supply for EPC contractors, factories, and infrastructure projects across Gujarat.',
           serviceType: 'Industrial Material Supply',
         }}
         faqSchema={[
           {
-            question: 'How does CorpHub Solution’s free vendor connection service work?',
-            answer: 'CorpHub Solution matches clients with vetted suppliers based on their technical material requirements at zero charge. Clients receive multiple quotations and finalize transactions directly with vendors.',
+            question: 'How does CORPHUB SOLUTION free vendor connection service work for industrial materials?',
+            answer: 'CORPHUB SOLUTION matches clients with vetted industrial suppliers based on their technical material requirements at zero charge. Clients receive multiple competitive quotations from verified vendors and finalize transactions directly.',
           },
           {
-            question: 'What is the direct material supply model by CorpHub Solution?',
-            answer: 'In direct supply, CorpHub Solution takes end-to-end responsibility for material sourcing, pricing quotation, order processing, and scheduled site delivery for projects across Gujarat.',
+            question: 'What is the direct material supply model by CORPHUB SOLUTION?',
+            answer: 'In direct supply, CORPHUB SOLUTION takes end-to-end responsibility for material sourcing, pricing quotation, quality verification, order processing, and scheduled site delivery for industrial projects across Gujarat.',
           },
           {
-            question: 'What material categories does CorpHub Solution source?',
-            answer: 'Categories include site cabins & containers, electrical switchgear & DBs, power & control cables, diesel generators, structural steel & cement, factory furniture, industrial hardware, automation components, and mechanical valves & pumps.',
+            question: 'What material categories does CORPHUB SOLUTION source and supply?',
+            answer: 'Categories include portable site cabins and containers, electrical switchgear and distribution boards, power and control cables, diesel generators, structural steel and cement, industrial furniture, hardware and fasteners, automation components (PLC, HMI, VFD), and mechanical valves, pumps, and fittings.',
+          },
+          {
+            question: 'Does CORPHUB SOLUTION supply electrical materials for factories in Gujarat?',
+            answer: 'Yes. CORPHUB SOLUTION sources and supplies a full range of electrical materials including switchgear, MCBs, MCCBs, contactors, relays, electrical panels, distribution boards, industrial cables, LED lighting, and power backup equipment for factories and industrial plants across Gujarat.',
+          },
+          {
+            question: 'Can CORPHUB SOLUTION deliver materials to any industrial site in Gujarat?',
+            answer: 'Yes. CORPHUB SOLUTION coordinates scheduled project delivery to industrial sites across Gujarat including Sanand GIDC, Ahmedabad (Vatva, Naroda, Changodar), Vadodara, Mehsana, Palanpur, Bharuch, Dahej, and other industrial corridors.',
           },
         ]}
       />

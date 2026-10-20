@@ -102,18 +102,38 @@ export default function TransportPage() {
   return (
     <>
       <SEO
-        title="Customized Corporate Transportation Solutions | CORPHUB SOLUTION"
-        description="Safe. Reliable. Flexible. Complete Coordination. Corporate staff transportation, outstation business travel, airport transfers, and long-term vehicle arrangements."
+        title="Corporate Staff Transportation & Employee Shuttle Services in Gujarat | CORPHUB SOLUTION"
+        description="CORPHUB SOLUTION provides customized corporate transportation, employee pickup-drop shuttles, airport transfers, outstation business travel & long-term vehicle contracts for industrial projects across Ahmedabad, Sanand, Gandhinagar, Vadodara & Palanpur. No fixed KM limits."
         canonicalPath="/services/transport"
         ogImage="/assets/images/Transport.png"
         keywords={[
-          'Corporate transportation services Gujarat',
-          'Industrial staff commute shuttle Palanpur',
-          'Project team vehicle rental Banaskantha',
-          'Airport transfers Ahmedabad to Palanpur',
-          'Tempo traveller hire industrial sites Gujarat',
-          'Long term corporate car rental Palanpur',
-          'Customized employee transportation without km limit'
+          'CORPHUB SOLUTION transport',
+          'corporate transportation services Gujarat',
+          'employee transportation services Ahmedabad',
+          'corporate cab services for employees GIFT City Gandhinagar',
+          'staff pickup and drop services Gujarat',
+          'industrial workforce bus transportation Sanand',
+          'corporate transport providers Vadodara industrial belt',
+          'tempo traveller rental for corporate group commuting Gujarat',
+          'AC staff bus transportation services for manufacturing plants',
+          'monthly corporate car rental Gujarat',
+          'long term vehicle contract for project teams',
+          'airport transfer Ahmedabad to Palanpur',
+          'railway station pickup drop Gujarat',
+          'outstation business travel Palanpur to Mumbai',
+          'customized employee transportation without km limit',
+          'daily pickup drop for factory workers Sanand GIDC',
+          'corporate fleet hire Ahmedabad',
+          'Innova Crysta car rental for corporate travel Gujarat',
+          'tempo traveller 12 seater hire Ahmedabad',
+          'multi-shift employee transportation Gujarat',
+          'industrial site transport coordination Gujarat',
+          'safe employee transportation with verified drivers',
+          'cost-effective staff transport solutions Gujarat',
+          'B2B staff commuting service providers Gujarat',
+          'corporate shuttle bus for IT companies Gandhinagar',
+          'project vehicle rental Banaskantha Mehsana',
+          'CorpHub Solution transport services'
         ]}
         breadcrumbs={[
           { label: 'Home', href: '/' },
@@ -122,24 +142,33 @@ export default function TransportPage() {
         ]}
         serviceSchema={{
           name: 'Customized Corporate Transportation Solutions',
-          description: 'Corporate staff pickup & drop, airport transfers, outstation travel, and long-term vehicle contracts in Palanpur and Gujarat.',
+          description: 'CORPHUB SOLUTION coordinates corporate staff pickup-drop, airport and railway transfers, outstation business travel, and long-term project vehicle contracts across Ahmedabad, Sanand, Gandhinagar, Vadodara, Palanpur, and Gujarat.',
           serviceType: 'Corporate Transportation Services',
         }}
         faqSchema={[
           {
-            question: 'Does CorpHub Solution offer corporate transportation without fixed kilometre limits?',
-            answer: 'Yes, CorpHub Solution does not follow fixed standard packages or predefined kilometre limits. Each quote is planned specifically according to the company’s actual route, schedule, and passenger requirements.',
+            question: 'Does CORPHUB SOLUTION offer corporate transportation without fixed kilometre limits?',
+            answer: 'Yes, CORPHUB SOLUTION does not follow fixed standard packages or predefined kilometre limits. Each quote is planned specifically according to the company actual route, schedule, and passenger requirements for maximum cost-efficiency.',
           },
           {
-            question: 'What types of vehicles can be arranged for project teams?',
-            answer: 'Vehicles include executive sedans, Toyota Innova Crysta MPVs, SUVs, 12 to 26-seater Tempo Travellers, and workforce buses with verified professional drivers.',
+            question: 'What types of vehicles can be arranged by CORPHUB SOLUTION for project teams?',
+            answer: 'Vehicles include executive sedans, Toyota Innova Crysta MPVs, SUVs, 12 to 26-seater Tempo Travellers, AC staff buses, and workforce transport vehicles — all with verified professional drivers.',
           },
           {
-            question: 'Can companies hire vehicles on long-term monthly contracts?',
-            answer: 'Yes, CorpHub Solution offers fixed-period and long-term monthly transportation contracts for 4, 5, 10 months, or full project lifecycles.',
+            question: 'Can companies hire vehicles on long-term monthly contracts with CORPHUB SOLUTION?',
+            answer: 'Yes, CORPHUB SOLUTION offers fixed-period and long-term monthly transportation contracts for 4, 5, 10 months, or full project lifecycles — ideal for EPC contractors, manufacturing plants, and infrastructure projects.',
+          },
+          {
+            question: 'Does CORPHUB SOLUTION provide airport and railway station transfers in Gujarat?',
+            answer: 'Yes. CORPHUB SOLUTION coordinates airport transfers from Ahmedabad International Airport, Vadodara Airport, and railway station pickups across Gujarat with on-time coordination for visiting executives and project teams.',
+          },
+          {
+            question: 'Which cities does CORPHUB SOLUTION cover for corporate transportation?',
+            answer: 'CORPHUB SOLUTION provides corporate transportation services across Ahmedabad, Sanand, Gandhinagar, Vadodara, Mehsana, Palanpur, Rajkot, Surat, Bharuch, and outstation routes connecting Mumbai, Nashik, and other regional locations.',
           },
         ]}
       />
+
 
       {/* Hero */}
       <PageHero

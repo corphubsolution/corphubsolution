@@ -65,18 +65,36 @@ export default function VendorManagementPage() {
   return (
     <>
       <SEO
-        title="Reliable Vendors. Better Project Coordination. | CORPHUB SOLUTION"
-        description="Local supplier coordination, contractor follow-ups and on-site progress support for industrial projects across Gujarat. Sourcing, site coordination, milestone tracking, and documentation."
+        title="Industrial Vendor Management & Site Liaison Services in Gujarat | CORPHUB SOLUTION"
+        description="CORPHUB SOLUTION provides end-to-end vendor management, local supplier coordination, contractor follow-ups & on-site progress support for industrial and manufacturing projects across Gujarat. Vendor sourcing, milestone tracking & documentation for EPC firms, factories & infrastructure projects."
         canonicalPath="/services/vendor-management"
         ogImage="/assets/images/vender.png"
         keywords={[
-          'Vendor management services Gujarat',
-          'Industrial site liaison Palanpur',
-          'Contractor follow-up coordination Banaskantha',
-          'Local supplier coordination Gujarat',
-          'EPC project vendor tracking',
-          'Site milestone tracking Palanpur',
-          'CorpHub Solution vendor management'
+          'CORPHUB SOLUTION vendor management',
+          'vendor management services Gujarat',
+          'vendor management services for manufacturing plants Gujarat',
+          'industrial site liaison Palanpur',
+          'on-site contractor management services Gujarat',
+          'contractor follow-up coordination Banaskantha',
+          'local supplier coordination Gujarat',
+          'EPC project vendor tracking Gujarat',
+          'site milestone tracking Palanpur',
+          'multi-vendor coordination services manufacturing plants',
+          'industrial site coordination contractors Gujarat',
+          'third party site coordination contractors Gujarat',
+          'vendor sourcing and vetting services Gujarat',
+          'delivery documentation and invoice coordination',
+          'on-site ground liaison communication Gujarat',
+          'turnkey industrial project site coordination',
+          'vendor compliance site safety coordination Gujarat',
+          'industrial subcontracting vendor alignment Gujarat',
+          'cost-effective vendor management solutions Gujarat',
+          'end-to-end vendor management industrial projects',
+          'contractor supervision services Ahmedabad',
+          'vendor management for chemical process plants Gujarat',
+          'heavy engineering vendor coordination Gujarat',
+          'EPC contractor coordination Gujarat',
+          'CorpHub Solution vendor management services'
         ]}
         breadcrumbs={[
           { label: 'Home', href: '/' },
@@ -85,21 +103,29 @@ export default function VendorManagementPage() {
         ]}
         serviceSchema={{
           name: 'Industrial Vendor Management & Site Liaison',
-          description: 'Local supplier coordination, contractor follow-ups, and on-site progress management for industrial projects in Gujarat.',
+          description: 'CORPHUB SOLUTION provides local supplier coordination, contractor follow-ups, milestone tracking, and on-site progress management for industrial, manufacturing, and EPC projects across Gujarat.',
           serviceType: 'Vendor Management & Ground Liaison Services',
         }}
         faqSchema={[
           {
-            question: 'What is Vendor Management by CorpHub Solution?',
-            answer: 'CorpHub Solution acts as your dedicated local coordination layer on the ground, handling vendor identification, site visits, contractor follow-ups, timeline tracking, and delivery documentation.',
+            question: 'What is Vendor Management by CORPHUB SOLUTION?',
+            answer: 'CORPHUB SOLUTION acts as your dedicated local coordination layer on the ground in Gujarat, handling vendor identification, site visits, contractor follow-ups, timeline tracking, delivery documentation, and communication liaison for industrial and manufacturing projects.',
           },
           {
-            question: 'How is Vendor Management different from Material Supply?',
-            answer: 'Vendor Management focuses purely on operational coordination, supervision, communication follow-ups, and paperwork liaison for contractors and service providers. Material Supply involves product procurement and physical delivery.',
+            question: 'How is Vendor Management different from Material Supply at CORPHUB SOLUTION?',
+            answer: 'Vendor Management focuses purely on operational coordination, supervision, communication follow-ups, and paperwork liaison for contractors and service providers. Material Supply involves physical product procurement and delivery. Both services can be combined for complete project support.',
           },
           {
-            question: 'Which areas do you provide on-site vendor liaison for?',
-            answer: 'We provide active on-site liaison across Palanpur, Banaskantha, Mehsana, Sanand, Ahmedabad, and key industrial belts across Gujarat.',
+            question: 'Which areas does CORPHUB SOLUTION provide on-site vendor liaison for?',
+            answer: 'CORPHUB SOLUTION provides active on-site vendor liaison across Palanpur, Banaskantha, Mehsana, Sanand GIDC, Ahmedabad, Gandhinagar, Vadodara, Bharuch, and key industrial belts across Gujarat.',
+          },
+          {
+            question: 'Can CORPHUB SOLUTION manage multiple contractors on a single industrial site?',
+            answer: 'Yes. CORPHUB SOLUTION specializes in multi-vendor coordination for complex industrial projects, managing simultaneous contractor activities, milestone tracking, delivery schedules, and documentation for factories and EPC projects.',
+          },
+          {
+            question: 'Does CORPHUB SOLUTION handle vendor compliance and documentation?',
+            answer: 'Yes. CORPHUB SOLUTION coordinates delivery records, supporting documents, invoice reconciliation, contractor compliance verification, and progress reporting to ensure transparent and accountable vendor management.',
           },
         ]}
       />

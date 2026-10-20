@@ -149,18 +149,37 @@ export default function EventManagementPage() {
   return (
     <>
       <SEO
-        title="Corporate & Industrial Event Management | Palanpur, Gujarat | CORPHUB SOLUTION"
-        description="From planning to execution, we coordinate every detail of corporate & industrial events in Palanpur, Banaskantha, Mehsana, and across Gujarat. Plant inaugurations, vendor meets, conferences, and gala dinners."
+        title="Corporate & Industrial Event Management in Gujarat | Plant Inauguration, Conferences | CORPHUB SOLUTION"
+        description="CORPHUB SOLUTION coordinates corporate & industrial events from planning to execution in Gujarat. Plant inaugurations, foundation stone ceremonies, vendor meets, B2B conferences, gala dinners, training workshops & VIP hospitality across Palanpur, Ahmedabad, Sanand, Gandhinagar & Vadodara."
         canonicalPath="/services/event-management"
         ogImage="/assets/images/events/event-hero.jpg"
         keywords={[
-          'Corporate event management Palanpur',
-          'Industrial plant inauguration Gujarat',
-          'Groundbreaking ceremony Banaskantha',
+          'CORPHUB SOLUTION event management',
+          'corporate event management Gujarat',
+          'corporate event management company Ahmedabad',
+          'industrial plant inauguration Gujarat',
+          'factory inauguration event planners Gujarat',
+          'plant inauguration ceremony organizers Palanpur',
+          'groundbreaking ceremony organizers Banaskantha',
+          'factory opening ceremony organizers Vadodara',
           'B2B vendor conference organizers Gujarat',
-          'Corporate gala dinner planning Mehsana',
-          'Industrial milestone event coordinator',
-          'CorpHUB Solution events'
+          'corporate gala dinner planning Mehsana',
+          'industrial milestone event coordinator Gujarat',
+          'ribbon cutting ceremony planners Gujarat',
+          'foundation stone laying ceremony organizers',
+          'VIP management and hospitality for industrial events',
+          'corporate conference and seminar organizers Gujarat',
+          'technical training workshop coordination Gujarat',
+          'large-scale corporate event management manufacturing India',
+          'turnkey event production company for factory inauguration',
+          'end-to-end corporate event planners Gujarat',
+          'AV lighting LED wall setup for factory openings',
+          'venue setup stage design corporate events Gujarat',
+          'corporate hospitality and logistics for inaugurations',
+          'government vetted industrial inauguration events Gujarat',
+          'annual meet and client appreciation event organizers',
+          'safety training HSE workshop organizers Gujarat',
+          'CorpHub Solution events Gujarat'
         ]}
         breadcrumbs={[
           { label: 'Home', href: '/' },
@@ -169,21 +188,29 @@ export default function EventManagementPage() {
         ]}
         serviceSchema={{
           name: 'Corporate & Industrial Event Management',
-          description: 'Turnkey event planning and logistical coordination for industrial ceremonies, corporate summits, and executive gatherings.',
+          description: 'CORPHUB SOLUTION provides turnkey event planning and logistical coordination for industrial plant inaugurations, corporate summits, vendor meets, training workshops, and executive gatherings across Gujarat.',
           serviceType: 'Corporate & Industrial Event Management',
         }}
         faqSchema={[
           {
-            question: 'What types of events does CorpHub Solution manage?',
-            answer: 'We coordinate industrial plant inaugurations, foundation stone ceremonies, vendor meets, annual corporate conferences, technical training seminars, VIP delegations, and corporate gala dinners.',
+            question: 'What types of events does CORPHUB SOLUTION manage?',
+            answer: 'CORPHUB SOLUTION coordinates industrial plant inaugurations, foundation stone ceremonies, factory openings, vendor meets, annual corporate conferences, technical training seminars, HSE workshops, VIP delegations, and corporate gala dinners across Gujarat.',
           },
           {
-            question: 'Can you handle guest accommodation and airport transfers along with event setup?',
-            answer: 'Yes! Because CorpHub Solution also manages corporate accommodation and transportation verticals, guest transfers, hotel bookings, VIP hospitality, and venue staging are handled under one seamless contract.',
+            question: 'Can CORPHUB SOLUTION handle guest accommodation and airport transfers along with event setup?',
+            answer: 'Yes. Because CORPHUB SOLUTION also manages corporate accommodation and transportation services, guest transfers, hotel bookings, VIP hospitality, and venue staging are handled under one seamless coordination contract.',
           },
           {
-            question: 'Which locations do you serve for event management?',
-            answer: 'We provide on-ground event management across Palanpur, Banaskantha, Mehsana, Sanand, Ahmedabad, and major industrial centers across Gujarat.',
+            question: 'Which locations does CORPHUB SOLUTION serve for event management in Gujarat?',
+            answer: 'CORPHUB SOLUTION provides on-ground event management across Palanpur, Banaskantha, Mehsana, Sanand, Ahmedabad, Gandhinagar, Vadodara, Bharuch, and major industrial centers across Gujarat.',
+          },
+          {
+            question: 'Does CORPHUB SOLUTION manage large-scale industrial plant inauguration ceremonies?',
+            answer: 'Yes. CORPHUB SOLUTION handles complete coordination for large-scale plant inaugurations including venue setup, stage design, AV and lighting, VIP protocol management, catering, ribbon-cutting arrangements, and on-site logistics.',
+          },
+          {
+            question: 'Can CORPHUB SOLUTION organize corporate training workshops and safety seminars?',
+            answer: 'Yes. CORPHUB SOLUTION coordinates end-to-end logistics for corporate training workshops, HSE safety programs, induction sessions, and technical seminars including venue, AV setup, participant accommodation, and transport.',
           },
         ]}
       />

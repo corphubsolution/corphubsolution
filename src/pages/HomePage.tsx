@@ -34,34 +34,66 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="CORPHUB SOLUTION — Industrial & Corporate Support Services | Gujarat"
-        description="Your Project. Our Responsibility. One Partner for Multiple Industrial Requirements. Corporate accommodation, customized transport, material supply, vendor management, and event logistics across Gujarat."
+        title="CORPHUB SOLUTION — Industrial & Corporate Support Services in Gujarat | Accommodation, Transport, Material Supply"
+        description="CORPHUB SOLUTION is your single-point industrial project support partner in Gujarat. We coordinate corporate accommodation, employee transportation, industrial material supply, vendor management & event logistics for factories, EPC firms & contractors across Sanand, Ahmedabad, Gandhinagar, Vadodara & Palanpur."
         canonicalPath="/"
         ogImage="/assets/images/home.png"
         keywords={[
+          'CORPHUB SOLUTION',
           'CorpHub Solution Gujarat',
-          'Industrial project support Sanand',
-          'Corporate accommodation Ahmedabad',
-          'Staff transportation Gandhinagar GIFT City',
-          'Industrial material supply Vadodara',
-          'Vendor management services Mehsana',
-          'Corporate support services Palanpur',
-          'Industrial contractor liaison Gujarat',
-          'Workforce housing Sanand GIDC',
-          'Corporate fleet hire Ahmedabad'
+          'CorpHub Solution Palanpur',
+          'industrial project support company Gujarat',
+          'corporate support services for factories Gujarat',
+          'single point contact industrial services India',
+          'B2B industrial service providers Gujarat',
+          'corporate accommodation near Sanand GIDC',
+          'workforce housing for industrial projects Gujarat',
+          'corporate guest house booking Ahmedabad',
+          'staff accommodation near GIDC industrial estate',
+          'employee transportation services Ahmedabad',
+          'corporate cab services for employees GIFT City Gandhinagar',
+          'staff pickup and drop services Gujarat',
+          'tempo traveller rental for corporate group commuting Gujarat',
+          'industrial material supply Gujarat',
+          'electrical switchgear supplier Ahmedabad',
+          'industrial cabins containers supplier Palanpur',
+          'free vendor connection industrial materials Gujarat',
+          'vendor management services for manufacturing plants Gujarat',
+          'on-site contractor management services Gujarat',
+          'industrial site coordination contractors Gujarat',
+          'corporate event management company Ahmedabad',
+          'factory inauguration event planners Gujarat',
+          'plant inauguration ceremony organizers Palanpur',
+          'B2B vendor conference organizers Gujarat',
+          'turnkey project management contractors Gujarat',
+          'EPC project support partner Gujarat',
+          'industrial outsourcing company Gujarat',
+          'project logistics and coordination Gujarat'
         ]}
         faqSchema={[
           {
-            question: 'What services does CorpHub Solution provide for industrial projects in Gujarat?',
-            answer: 'CorpHub Solution coordinates corporate accommodation, customized staff transportation, industrial material supply, vendor management, and event management for industrial and corporate projects through a single point of contact.',
+            question: 'What services does CORPHUB SOLUTION provide for industrial projects in Gujarat?',
+            answer: 'CORPHUB SOLUTION provides five integrated industrial support services through a single point of contact: corporate accommodation management, customized employee transportation, industrial material sourcing and supply, vendor management and site liaison, and corporate event management for factories, EPC firms, and contractors across Gujarat.',
           },
           {
-            question: 'Which industrial cities and hubs does CorpHub Solution cover in Gujarat?',
-            answer: 'We provide active on-ground support across Gujarat’s premier industrial corridors including Sanand (Automotive & Semiconductor GIDC), Ahmedabad (Commercial Centers & Naroda/Changodar), Gandhinagar (GIFT City & IT Parks), Vadodara (Heavy Engineering & Chemical Zones), Mehsana, and Northern Gujarat (Palanpur, Deesa).',
+            question: 'Which industrial cities and hubs does CORPHUB SOLUTION cover in Gujarat?',
+            answer: 'CORPHUB SOLUTION provides active on-ground support across Gujarat including Sanand GIDC (Automotive & Semiconductor), Ahmedabad (Naroda, Changodar, Vatva), Gandhinagar (GIFT City & IT Parks), Vadodara (Heavy Engineering & Chemical Zones), Mehsana, Bharuch, Dahej PCPIR, and Northern Gujarat (Palanpur, Deesa, Banaskantha).',
           },
           {
-            question: 'How does CorpHub Solution help project managers and visiting engineers?',
-            answer: 'We eliminate multi-vendor coordination friction by taking end-to-end accountability for employee housing, project fleet transport, equipment and material sourcing, and vendor compliance.',
+            question: 'How does CORPHUB SOLUTION help project managers and visiting engineers?',
+            answer: 'We eliminate multi-vendor coordination friction by providing end-to-end accountability for employee housing near plant sites, project fleet transport with verified drivers, industrial equipment and material sourcing with competitive quotations, contractor follow-ups, and corporate event logistics — all managed through one dedicated coordination team.',
+          },
+          {
+            question: 'Why should companies choose CORPHUB SOLUTION over individual vendors?',
+            answer: 'CORPHUB SOLUTION serves as your single-window project support partner, eliminating the need to coordinate with multiple local vendors. We handle accommodation, transport, materials, vendor liaison, and events through one point of contact, saving time, reducing costs, and ensuring reliable project execution across Gujarat.',
+          },
+          {
+            question: 'Does CORPHUB SOLUTION serve EPC contractors and infrastructure projects?',
+            answer: 'Yes. CORPHUB SOLUTION actively supports EPC contractors, infrastructure development firms, and turnkey project companies with workforce housing, site transportation, industrial material procurement, local vendor coordination, and milestone event management across all major industrial corridors in Gujarat.',
+          },
+          {
+            question: 'How can I contact CORPHUB SOLUTION for a project enquiry?',
+            answer: 'You can contact CORPHUB SOLUTION by calling +91 9157060290, emailing corphubsolution@gmail.com, or sending a WhatsApp message. We respond to all project enquiries within 1 business day.',
           },
         ]}
       />
@@ -100,7 +132,7 @@ export default function HomePage() {
                 </p>
 
                 <p className="text-xs md:text-sm text-gray-600 leading-relaxed mb-8 max-w-xl">
-                  We coordinate accommodation, transportation, material supply, vendor management, and event management for industrial projects across Gujarat — so your team can stay focused on what matters most.
+                  CORPHUB SOLUTION coordinates corporate accommodation, employee transportation, industrial material supply, vendor management, and event management for factories, EPC firms, and contractors across Sanand, Ahmedabad, Gandhinagar, Vadodara, Mehsana, and Palanpur — so your team can stay focused on what matters most.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4">
@@ -202,7 +234,7 @@ export default function HomePage() {
               </h2>
               <div className="w-16 h-1 bg-[#FF6B00] mx-auto mt-3 rounded-full mb-3" />
               <p className="text-xs md:text-sm text-gray-500 max-w-xl mx-auto">
-                Integrated support for industrial and corporate requirements, customised for your project needs.
+                CORPHUB SOLUTION delivers integrated B2B industrial support — from corporate guest house arrangements and staff shuttle coordination to material procurement, contractor liaison, and event logistics — customised for your project needs.
               </p>
             </div>
           </ScrollReveal>
@@ -276,11 +308,11 @@ export default function HomePage() {
                 </h2>
 
                 <p className="mb-4 leading-relaxed text-gray-600 text-sm md:text-base">
-                  We provide integrated project support services for industrial and infrastructure projects, with a focus on reliable coordination, customised solutions and long-term business relationships.
+                  CORPHUB SOLUTION provides integrated B2B project support services for industrial, manufacturing, and infrastructure projects across Gujarat — including corporate accommodation management, customized employee transportation, industrial material sourcing, vendor coordination, and event logistics.
                 </p>
 
                 <p className="mb-6 leading-relaxed text-gray-600 text-sm">
-                  Headquartered in Palanpur, Banaskantha, our established vendor and logistics network across Gujarat ensures seamless workforce housing, transport, material procurement, and site coordination.
+                  Headquartered in Palanpur, Banaskantha, our established vendor and logistics network spans Sanand GIDC, Ahmedabad, Gandhinagar GIFT City, Vadodara, Mehsana, Bharuch, and Dahej — ensuring seamless workforce housing, staff transport, material procurement, contractor follow-ups, and on-site coordination for your project.
                 </p>
 
                 {/* 3 Checkpoint Bullets */}
