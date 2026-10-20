@@ -281,7 +281,7 @@ ${formData.fileName ? `📎 *Document Attached:* ${formData.fileName}` : ''}`;
         title="Industrial Material Supply Gujarat | CORPHUB SOLUTION"
         description="CORPHUB SOLUTION provides reliable industrial material sourcing and direct supply for factories, EPC firms & contractors in Gujarat. Free vendor connection or quotation-based direct supply for site cabins, electrical switchgear, cables, generators, steel, fasteners & automation components across Ahmedabad, Sanand, Vadodara & Palanpur."
         canonicalPath="/services/material-supply"
-        ogImage="/assets/images/material-supply-hero.png"
+        ogImage="/assets/images/material-supply-hero.webp"
         keywords={[
           'CORPHUB SOLUTION material supply',
           'industrial material supply Gujarat',
@@ -349,7 +349,7 @@ ${formData.fileName ? `📎 *Document Attached:* ${formData.fileName}` : ''}`;
       <PageHero
         title="Reliable Industrial Material Sourcing & Supply"
         subtitle="Vendor Connection & Direct Material Supply"
-        image="/assets/images/material-supply-hero.png"
+        image="/assets/images/material-supply-hero.webp"
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/#services' },
@@ -425,8 +425,12 @@ ${formData.fileName ? `📎 *Document Attached:* ${formData.fileName}` : ''}`;
                 <ScrollReveal delay={200}>
                   <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-100 group">
                     <img 
-                      src="/assets/images/material-supply-hero.png" 
+                      src="/assets/images/material-supply-hero.webp" 
                       alt="Industrial Material Staging and Logistics Warehouse Yard" 
+                      width={1200}
+                      height={600}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-[320px] md:h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent pointer-events-none" />

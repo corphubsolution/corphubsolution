@@ -29,7 +29,7 @@ export const SERVICES: Service[] = [
     tagline: 'The Right Stay. The Right Support. One Coordinated Solution.',
     description:
       'We help corporate and industrial companies arrange suitable accommodation for employees, visiting professionals and project teams — with flexible options, competitive pricing and reliable coordination.',
-    heroImage: '/assets/images/accommodation-hero.png',
+    heroImage: '/assets/images/accommodation-hero.webp',
     icon: Building2,
     color: '#0A2E56',
     features: [
@@ -47,7 +47,7 @@ export const SERVICES: Service[] = [
     tagline: 'Safe. Reliable. Flexible. Complete Coordination.',
     description:
       'Customized transportation services for companies, industrial projects, employees, and engineers planned according to your route, vehicle type, and schedule.',
-    heroImage: '/assets/images/Transport.png',
+    heroImage: '/assets/images/Transport.webp',
     icon: Car,
     color: '#123B70',
     features: [
@@ -65,7 +65,7 @@ export const SERVICES: Service[] = [
     tagline: 'Reliable Industrial Material Sourcing & Supply.',
     description:
       'We help industrial companies, factories, EPC firms and contractors source the right materials through our free vendor network or direct supply.',
-    heroImage: '/assets/images/material-supply-hero.png',
+    heroImage: '/assets/images/material-supply-hero.webp',
     icon: Package,
     color: '#1A4D8F',
     features: [
@@ -83,7 +83,7 @@ export const SERVICES: Service[] = [
     tagline: 'Reliable Vendors. Better Project Coordination.',
     description:
       'Local supplier coordination, contractor follow-ups and on-site progress support for industrial projects across Gujarat.',
-    heroImage: '/assets/images/vender.png',
+    heroImage: '/assets/images/vender.webp',
     icon: Users,
     color: '#071C3C',
     features: [
@@ -101,7 +101,7 @@ export const SERVICES: Service[] = [
     tagline: 'Corporate & Industrial Event Management. End-to-End Coordination.',
     description:
       'From planning to execution, we coordinate every detail for industrial plant inaugurations, vendor meets, B2B conferences, and corporate gatherings.',
-    heroImage: '/assets/images/events/event-hero.jpg',
+    heroImage: '/assets/images/events/event-hero.webp',
     icon: CalendarCheck,
     color: '#052447',
     features: [

@@ -105,7 +105,7 @@ export default function TransportPage() {
         title="Corporate Staff Transportation Gujarat | CORPHUB SOLUTION"
         description="CORPHUB SOLUTION provides customized corporate transportation, employee pickup-drop shuttles, airport transfers, outstation business travel & long-term vehicle contracts for industrial projects across Ahmedabad, Sanand, Gandhinagar, Vadodara & Palanpur. No fixed KM limits."
         canonicalPath="/services/transport"
-        ogImage="/assets/images/Transport.png"
+        ogImage="/assets/images/Transport.webp"
         keywords={[
           'CORPHUB SOLUTION transport',
           'corporate transportation services Gujarat',
@@ -174,7 +174,7 @@ export default function TransportPage() {
       <PageHero
         title="CORPORATE STAFF TRANSPORTATION & TRAVEL SOLUTIONS"
         subtitle="Safe. Reliable. Flexible. Complete Coordination."
-        image="/assets/images/Transport.png"
+        image="/assets/images/Transport.webp"
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/#services' },
@@ -241,8 +241,12 @@ export default function TransportPage() {
                 <ScrollReveal delay={200}>
                   <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-100 group">
                     <img 
-                      src="/assets/images/Transport.png" 
+                      src="/assets/images/Transport.webp" 
                       alt="Corporate Transportation Fleet — Sedans, SUVs & Tempo Travellers" 
+                      width={1200}
+                      height={600}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-[320px] md:h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />

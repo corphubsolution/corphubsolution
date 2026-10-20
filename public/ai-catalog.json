@@ -1,5 +1,6 @@
 {
   "$schema": "https://agenticresourcediscovery.org/spec/v1/schema.json",
+  "specVersion": "1.0",
   "name": "CORPHUB SOLUTION",
   "description": "Industrial and corporate project support partner in Palanpur, Banaskantha, Gujarat, India. Serving the industry for over 3 years. Single point of contact for corporate accommodation, customized staff transportation, industrial material supply, vendor management, and corporate event logistics.",
   "slogan": "CorpHub Solution — Your Requirements, Our Responsibility.",
@@ -14,27 +15,27 @@
     "state": "Gujarat",
     "country": "India"
   },
-  "resources": [
+  "entries": [
     {
       "id": "accommodation",
       "name": "Corporate & Industrial Accommodation Solutions",
       "type": "service",
       "url": "https://corphubsolution.vercel.app/services/accommodation",
-      "description": "The Right Stay. The Right Support. One Coordinated Solution. Rental property arrangements, hotel & guest house accommodation at corporate rates with PO terms, and managed housing with housekeeping & utilities."
+      "description": "Rental property arrangements, hotel & guest house accommodation at corporate rates with PO terms, and managed housing with housekeeping & utilities."
     },
     {
       "id": "transport",
       "name": "Customized Corporate Transportation Solutions",
       "type": "service",
       "url": "https://corphubsolution.vercel.app/services/transport",
-      "description": "Safe. Reliable. Flexible. Complete Coordination. Corporate staff commute shuttles, airport transfers, outstation business travel, and long-term vehicle arrangements without fixed packages or standard kilometre limits."
+      "description": "Corporate staff commute shuttles, airport transfers, outstation business travel, and long-term vehicle arrangements without fixed packages."
     },
     {
       "id": "material-supply",
       "name": "Industrial Material Supply & Sourcing",
       "type": "service",
       "url": "https://corphubsolution.vercel.app/services/material-supply",
-      "description": "Reliable industrial material sourcing and direct supply. Connect with Vendors (Free) or Direct Material Supply by CorpHub Solution across 9 industrial categories."
+      "description": "Reliable industrial material sourcing and direct supply across electrical, civil, mechanical, safety consumables and hardware."
     },
     {
       "id": "vendor-management",
@@ -48,7 +49,44 @@
       "name": "Corporate Event Management",
       "type": "service",
       "url": "https://corphubsolution.vercel.app/services/event-management",
-      "description": "Turnkey event management for plant inaugurations, Bhoomi Pujan, corporate annual meets, vendor summits, and HSE safety workshops."
+      "description": "Turnkey event management for plant inaugurations, Bhoomi Pujan, corporate annual meets, vendor summits, and HSE workshops."
+    }
+  ],
+  "resources": [
+    {
+      "id": "accommodation",
+      "name": "Corporate & Industrial Accommodation Solutions",
+      "type": "service",
+      "url": "https://corphubsolution.vercel.app/services/accommodation",
+      "description": "Rental property arrangements, hotel & guest house accommodation at corporate rates with PO terms, and managed housing with housekeeping & utilities."
+    },
+    {
+      "id": "transport",
+      "name": "Customized Corporate Transportation Solutions",
+      "type": "service",
+      "url": "https://corphubsolution.vercel.app/services/transport",
+      "description": "Corporate staff commute shuttles, airport transfers, outstation business travel, and long-term vehicle arrangements without fixed packages."
+    },
+    {
+      "id": "material-supply",
+      "name": "Industrial Material Supply & Sourcing",
+      "type": "service",
+      "url": "https://corphubsolution.vercel.app/services/material-supply",
+      "description": "Reliable industrial material sourcing and direct supply across electrical, civil, mechanical, safety consumables and hardware."
+    },
+    {
+      "id": "vendor-management",
+      "name": "Vendor Management & Site Liaison",
+      "type": "service",
+      "url": "https://corphubsolution.vercel.app/services/vendor-management",
+      "description": "End-to-end vendor vetting, contract administration, SLA compliance tracking, and dispute management for engineering sites."
+    },
+    {
+      "id": "event-management",
+      "name": "Corporate Event Management",
+      "type": "service",
+      "url": "https://corphubsolution.vercel.app/services/event-management",
+      "description": "Turnkey event management for plant inaugurations, Bhoomi Pujan, corporate annual meets, vendor summits, and HSE workshops."
     }
   ]
 }

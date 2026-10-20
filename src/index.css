@@ -155,20 +155,22 @@ h4.text-white {
   align-items: center;
   gap: 0.5rem;
   font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.725rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-orange-500);
-  padding: 0.3rem 0.75rem;
-  border: 1px solid var(--color-orange-500);
-  border-radius: 2px;
+  color: #C2410C;
+  background-color: #FFF7ED;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid #FDBA74;
+  border-radius: 4px;
   margin-bottom: 1rem;
 }
 
 .section-label--light {
-  color: var(--color-orange-400);
-  border-color: var(--color-orange-400);
+  color: #FED7AA;
+  background-color: rgba(255, 107, 0, 0.12);
+  border-color: #FB923C;
 }
 
 /* ─── BUTTONS ────────────────────────────────────────────────────────────────── */
@@ -191,15 +193,15 @@ h4.text-white {
 }
 
 .btn-primary {
-  background-color: var(--color-orange-500);
-  color: white;
-  border-color: var(--color-orange-500);
+  background-color: #C2410C;
+  color: #FFFFFF;
+  border-color: #C2410C;
 }
 .btn-primary:hover {
-  background-color: var(--color-orange-600);
-  border-color: var(--color-orange-600);
+  background-color: #9A3412;
+  border-color: #9A3412;
   transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(255,107,0,0.35);
+  box-shadow: 0 4px 20px rgba(194, 65, 12, 0.35);
 }
 .btn-primary:active {
   transform: translateY(0);
@@ -207,11 +209,11 @@ h4.text-white {
 
 .btn-outline {
   background-color: transparent;
-  color: var(--color-orange-500);
-  border-color: var(--color-orange-500);
+  color: #C2410C;
+  border-color: #C2410C;
 }
 .btn-outline:hover {
-  background-color: var(--color-orange-500);
+  background-color: #C2410C;
   color: white;
 }
 
@@ -236,13 +238,13 @@ h4.text-white {
 }
 
 .btn-whatsapp {
-  background-color: #25D366;
-  color: white;
-  border-color: #25D366;
+  background-color: #075E54;
+  color: #FFFFFF;
+  border-color: #075E54;
 }
 .btn-whatsapp:hover {
-  background-color: #1ebe5a;
-  border-color: #1ebe5a;
+  background-color: #054c44;
+  border-color: #054c44;
   transform: translateY(-1px);
 }
 

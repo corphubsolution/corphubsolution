@@ -65,10 +65,10 @@ export default function Footer() {
                 </picture>
               </div>
             </Link>
-            <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.65)' }}>
+            <p className="text-sm leading-relaxed mb-4" style={{ color: '#E2E8F0' }}>
               Your Project. Our Responsibility.
             </p>
-            <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.45)' }}>
+            <p className="text-xs leading-relaxed" style={{ color: '#94A3B8' }}>
               Industrial project support services across Gujarat — accommodation, transport, material supply, vendor management, and event management.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function Footer() {
           <div>
             <h3
               className="text-xs font-bold uppercase tracking-widest mb-4"
-              style={{ color: 'rgba(255,255,255,0.4)' }}
+              style={{ color: '#CBD5E1' }}
             >
               Services
             </h3>
@@ -87,7 +87,7 @@ export default function Footer() {
                   <Link
                     to={service.slug}
                     className="text-sm transition-colors hover:text-orange-400"
-                    style={{ color: 'rgba(255,255,255,0.7)' }}
+                    style={{ color: '#E2E8F0' }}
                   >
                     {service.name}
                   </Link>
@@ -100,7 +100,7 @@ export default function Footer() {
           <div>
             <h3
               className="text-xs font-bold uppercase tracking-widest mb-4"
-              style={{ color: 'rgba(255,255,255,0.4)' }}
+              style={{ color: '#CBD5E1' }}
             >
               Company
             </h3>
@@ -110,7 +110,7 @@ export default function Footer() {
                   <Link
                     to={link.to}
                     className="text-sm transition-colors hover:text-orange-400"
-                    style={{ color: 'rgba(255,255,255,0.7)' }}
+                    style={{ color: '#E2E8F0' }}
                   >
                     {link.label}
                   </Link>
@@ -123,7 +123,7 @@ export default function Footer() {
           <div>
             <h3
               className="text-xs font-bold uppercase tracking-widest mb-4"
-              style={{ color: 'rgba(255,255,255,0.4)' }}
+              style={{ color: '#CBD5E1' }}
             >
               Contact
             </h3>
@@ -132,7 +132,7 @@ export default function Footer() {
                 <a
                   href={`tel:${CONTACT.phoneRaw}`}
                   className="flex items-start gap-2.5 text-sm hover:text-orange-400 transition-colors"
-                  style={{ color: 'rgba(255,255,255,0.7)' }}
+                  style={{ color: '#E2E8F0' }}
                   aria-label={`Phone: ${CONTACT.phone}`}
                 >
                   <Phone size={14} className="mt-0.5 shrink-0" aria-hidden="true" />
@@ -143,7 +143,7 @@ export default function Footer() {
                 <a
                   href={`mailto:${CONTACT.email}`}
                   className="flex items-start gap-2.5 text-sm hover:text-orange-400 transition-colors"
-                  style={{ color: 'rgba(255,255,255,0.7)' }}
+                  style={{ color: '#E2E8F0' }}
                   aria-label={`Email: ${CONTACT.email}`}
                 >
                   <Mail size={14} className="mt-0.5 shrink-0" aria-hidden="true" />
@@ -153,7 +153,7 @@ export default function Footer() {
               <li>
                 <span
                   className="flex items-start gap-2.5 text-sm"
-                  style={{ color: 'rgba(255,255,255,0.7)' }}
+                  style={{ color: '#E2E8F0' }}
                 >
                   <MapPin size={14} className="mt-0.5 shrink-0" aria-hidden="true" />
                   {CONTACT.location.full}
@@ -176,7 +176,7 @@ export default function Footer() {
                   href={CONTACT.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-semibold text-white/80 hover:text-orange-400 transition-colors px-3 py-2 rounded-lg bg-white/5 border border-white/10 hover:border-orange-400/40"
+                  className="inline-flex items-center gap-2 text-xs font-semibold text-white/90 hover:text-orange-400 transition-colors px-3 py-2 rounded-lg bg-white/5 border border-white/10 hover:border-orange-400/40"
                   id="footer-instagram-btn"
                   aria-label="Follow CorpHub Solution on Instagram"
                 >
@@ -195,21 +195,21 @@ export default function Footer() {
         style={{ borderColor: 'rgba(18,59,112,0.5)' }}
       >
         <div className="container-site py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>
+          <p className="text-xs" style={{ color: '#94A3B8' }}>
             © {year} CORPHUB SOLUTION. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link
               to="/privacy-policy"
               className="text-xs hover:text-orange-400 transition-colors"
-              style={{ color: 'rgba(255,255,255,0.4)' }}
+              style={{ color: '#94A3B8' }}
             >
               Privacy Policy
             </Link>
             <Link
               to="/terms"
               className="text-xs hover:text-orange-400 transition-colors"
-              style={{ color: 'rgba(255,255,255,0.4)' }}
+              style={{ color: '#94A3B8' }}
             >
               Terms & Conditions
             </Link>

@@ -135,7 +135,7 @@ const AUDIENCES = [
 ];
 
 const GALLERY_PHOTOS = [
-  { src: '/assets/images/events/event-hero.jpg', alt: 'Grand Corporate Auditorium' },
+  { src: '/assets/images/events/event-hero.webp', alt: 'Grand Corporate Auditorium' },
   { src: '/assets/images/events/plant-inauguration.jpg', alt: 'Plant Inauguration Ribbon Cutting' },
   { src: '/assets/images/events/gala-dinner.jpg', alt: 'Corporate Gala Dinner Banquet' },
   { src: '/assets/images/events/training-seminar.jpg', alt: 'Corporate Workshop & Seminar' },
@@ -152,7 +152,7 @@ export default function EventManagementPage() {
         title="Corporate Event Management Gujarat | CORPHUB SOLUTION"
         description="CORPHUB SOLUTION coordinates corporate & industrial events from planning to execution in Gujarat. Plant inaugurations, foundation stone ceremonies, vendor meets, B2B conferences, gala dinners, training workshops & VIP hospitality across Palanpur, Ahmedabad, Sanand, Gandhinagar & Vadodara."
         canonicalPath="/services/event-management"
-        ogImage="/assets/images/events/event-hero.jpg"
+        ogImage="/assets/images/events/event-hero.webp"
         keywords={[
           'CORPHUB SOLUTION event management',
           'corporate event management Gujarat',
@@ -220,8 +220,12 @@ export default function EventManagementPage() {
         {/* Background Image with Deep Gradient Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/images/events/event-hero.jpg"
+            src="/assets/images/events/event-hero.webp"
             alt="Corporate and Industrial Event Auditorium"
+            width={1200}
+            height={640}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover object-center brightness-90"
           />
           <div 

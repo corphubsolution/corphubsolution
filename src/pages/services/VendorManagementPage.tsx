@@ -68,7 +68,7 @@ export default function VendorManagementPage() {
         title="Vendor Management & Site Liaison Gujarat | CORPHUB SOLUTION"
         description="CORPHUB SOLUTION provides end-to-end vendor management, local supplier coordination, contractor follow-ups & on-site progress support for industrial and manufacturing projects across Gujarat. Vendor sourcing, milestone tracking & documentation for EPC firms, factories & infrastructure projects."
         canonicalPath="/services/vendor-management"
-        ogImage="/assets/images/vender.png"
+        ogImage="/assets/images/vender.webp"
         keywords={[
           'CORPHUB SOLUTION vendor management',
           'vendor management services Gujarat',
@@ -134,7 +134,7 @@ export default function VendorManagementPage() {
       <PageHero
         title="Reliable Vendors. Better Project Coordination."
         subtitle="Industrial Vendor Management & Site Liaison"
-        image="/assets/images/vender.png"
+        image="/assets/images/vender.webp"
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/#services' },
@@ -153,8 +153,12 @@ export default function VendorManagementPage() {
               {/* Top Industrial Team Photo */}
               <div className="relative rounded-2xl overflow-hidden shadow-lg mb-8 border border-white/10 group">
                 <img
-                  src="/assets/images/vender.png"
+                  src="/assets/images/vender.webp"
                   alt="Industrial project team and engineers coordinating vendor management on site"
+                  width={1200}
+                  height={600}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-[260px] sm:h-[340px] md:h-[400px] object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071C3C]/80 via-transparent to-transparent pointer-events-none" />

@@ -37,7 +37,7 @@ export default function HomePage() {
         title="CORPHUB SOLUTION — Industrial & Corporate Support Services"
         description="CORPHUB SOLUTION is your single-point industrial project support partner in Gujarat. We coordinate corporate accommodation, employee transportation, industrial material supply, vendor management & event logistics for factories, EPC firms & contractors across Sanand, Ahmedabad, Gandhinagar, Vadodara & Palanpur."
         canonicalPath="/"
-        ogImage="/assets/images/home.png"
+        ogImage="/assets/images/home.webp"
         keywords={[
           'CORPHUB SOLUTION',
           'CorpHub Solution Gujarat',
@@ -109,7 +109,7 @@ export default function HomePage() {
             {/* Left Column: Headlines & CTAs */}
             <div className="lg:col-span-6 z-10">
               <ScrollReveal>
-                <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF6B00] mb-3 inline-block">
+                <span className="text-xs font-extrabold uppercase tracking-widest text-[#C2410C] mb-3 inline-block">
                   Corporate & Industrial Project Support
                 </span>
 
@@ -124,7 +124,7 @@ export default function HomePage() {
                   }}
                 >
                   Your Project. <br />
-                  <span className="text-[#FF6B00]">Our Responsibility.</span>
+                  <span className="text-[#C2410C]">Our Responsibility.</span>
                 </h1>
 
                 <p className="text-base md:text-lg font-heading font-extrabold text-[#071C3C] mb-3">
@@ -165,11 +165,11 @@ export default function HomePage() {
               <ScrollReveal delay={150}>
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 group">
                   <img
-                    src="/assets/images/home.png"
+                    src="/assets/images/home.webp"
                     alt="CorpHub Solution — Industrial petrochemical complex with engineers coordinating project logistics"
                     className="w-full h-[340px] sm:h-[400px] lg:h-[460px] object-cover object-right group-hover:scale-105 transition-transform duration-700"
-                    width={1920}
-                    height={800}
+                    width={1600}
+                    height={600}
                     loading="eager"
                     fetchPriority="high"
                     decoding="async"
@@ -275,7 +275,7 @@ export default function HomePage() {
               <ScrollReveal>
                 <div className="relative rounded-3xl overflow-hidden shadow-xl border border-gray-100 group aspect-4/3">
                   <img
-                    src="/assets/images/home.png"
+                    src="/assets/images/home.webp"
                     alt="CorpHub Solution engineers coordinating industrial site operations"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"

@@ -83,7 +83,7 @@ export default function AccommodationPage() {
         title="Corporate Accommodation Solutions Gujarat | CORPHUB SOLUTION"
         description="CORPHUB SOLUTION arranges corporate accommodation, workforce housing, executive guest houses & serviced apartments for industrial projects near Sanand GIDC, Ahmedabad, Gandhinagar, Vadodara & Palanpur. Flexible PO-based booking, managed stays & competitive corporate rates."
         canonicalPath="/services/accommodation"
-        ogImage="/assets/images/accommodation-hero.png"
+        ogImage="/assets/images/accommodation-hero.webp"
         keywords={[
           'CORPHUB SOLUTION accommodation',
           'corporate accommodation Gujarat',
@@ -150,7 +150,7 @@ export default function AccommodationPage() {
       <PageHero
         title="CORPORATE & INDUSTRIAL ACCOMMODATION SOLUTIONS"
         subtitle="The Right Stay. The Right Support. One Coordinated Solution."
-        image="/assets/images/accommodation-hero.png"
+        image="/assets/images/accommodation-hero.webp"
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/#services' },
@@ -206,8 +206,12 @@ export default function AccommodationPage() {
                 <ScrollReveal delay={200}>
                   <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-100 group">
                     <img 
-                      src="/assets/images/accommodation-hero.png" 
+                      src="/assets/images/accommodation-hero.webp" 
                       alt="Corporate Accommodation — Industrial & Executive Stay" 
+                      width={1200}
+                      height={600}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-[320px] md:h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />

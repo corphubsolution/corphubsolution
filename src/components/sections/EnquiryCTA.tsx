@@ -39,7 +39,7 @@ export default function EnquiryCTA({
             >
               {displayHeading}
             </h2>
-            <p className="text-sm md:text-base text-white/70">
+            <p className="text-sm md:text-base text-slate-200">
               {displaySubtext}
             </p>
           </div>
