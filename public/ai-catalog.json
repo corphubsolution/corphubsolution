@@ -1,92 +1,69 @@
 {
-  "$schema": "https://agenticresourcediscovery.org/spec/v1/schema.json",
   "specVersion": "1.0",
-  "name": "CORPHUB SOLUTION",
-  "description": "Industrial and corporate project support partner in Palanpur, Banaskantha, Gujarat, India. Serving the industry for over 3 years. Single point of contact for corporate accommodation, customized staff transportation, industrial material supply, vendor management, and corporate event logistics.",
-  "slogan": "CorpHub Solution — Your Requirements, Our Responsibility.",
-  "url": "https://corphubsolution.vercel.app",
-  "contact": {
-    "email": "corphubsolution@gmail.com",
-    "phone": "+919157060290"
-  },
-  "location": {
-    "city": "Palanpur",
-    "district": "Banaskantha",
-    "state": "Gujarat",
-    "country": "India"
+  "host": {
+    "displayName": "CORPHUB SOLUTION",
+    "url": "https://corphubsolution.vercel.app"
   },
   "entries": [
     {
-      "id": "accommodation",
-      "name": "Corporate & Industrial Accommodation Solutions",
+      "identifier": "urn:ard:corphubsolution:accommodation",
+      "displayName": "Corporate & Industrial Accommodation Solutions",
       "type": "service",
       "url": "https://corphubsolution.vercel.app/services/accommodation",
-      "description": "Rental property arrangements, hotel & guest house accommodation at corporate rates with PO terms, and managed housing with housekeeping & utilities."
+      "description": "Turnkey corporate guest houses, employee housing, and serviced apartments near industrial estates across Gujarat.",
+      "representativeQueries": [
+        "Corporate guest house in Sanand Gujarat",
+        "Industrial workforce accommodation Ahmedabad",
+        "Engineer staff housing Palanpur"
+      ]
     },
     {
-      "id": "transport",
-      "name": "Customized Corporate Transportation Solutions",
+      "identifier": "urn:ard:corphubsolution:transport",
+      "displayName": "Customized Corporate Transportation Solutions",
       "type": "service",
       "url": "https://corphubsolution.vercel.app/services/transport",
-      "description": "Corporate staff commute shuttles, airport transfers, outstation business travel, and long-term vehicle arrangements without fixed packages."
+      "description": "Employee pickup-drop shuttles, outstation business travel, and monthly vehicle contracts for industrial sites.",
+      "representativeQueries": [
+        "Corporate staff bus contract Sanand",
+        "Employee transportation services Gujarat",
+        "Corporate cab rental Ahmedabad"
+      ]
     },
     {
-      "id": "material-supply",
-      "name": "Industrial Material Supply & Sourcing",
+      "identifier": "urn:ard:corphubsolution:material-supply",
+      "displayName": "Industrial Material Supply & Sourcing",
       "type": "service",
       "url": "https://corphubsolution.vercel.app/services/material-supply",
-      "description": "Reliable industrial material sourcing and direct supply across electrical, civil, mechanical, safety consumables and hardware."
+      "description": "Procurement of electrical switchgear, cables, site cabins, hardware, and safety consumables across Gujarat.",
+      "representativeQueries": [
+        "Industrial material supplier Gujarat",
+        "Electrical switchgear distributor Sanand",
+        "Portable site cabins Palanpur"
+      ]
     },
     {
-      "id": "vendor-management",
-      "name": "Vendor Management & Site Liaison",
+      "identifier": "urn:ard:corphubsolution:vendor-management",
+      "displayName": "Vendor Management & Site Liaison",
       "type": "service",
       "url": "https://corphubsolution.vercel.app/services/vendor-management",
-      "description": "End-to-end vendor vetting, contract administration, SLA compliance tracking, and dispute management for engineering sites."
+      "description": "Local contractor coordination, milestone tracking, and on-site ground liaison for factories and EPC projects.",
+      "representativeQueries": [
+        "Vendor management services Gujarat",
+        "Industrial site liaison partner Ahmedabad",
+        "Contractor coordination Sanand"
+      ]
     },
     {
-      "id": "event-management",
-      "name": "Corporate Event Management",
+      "identifier": "urn:ard:corphubsolution:event-management",
+      "displayName": "Corporate Event Management",
       "type": "service",
       "url": "https://corphubsolution.vercel.app/services/event-management",
-      "description": "Turnkey event management for plant inaugurations, Bhoomi Pujan, corporate annual meets, vendor summits, and HSE workshops."
-    }
-  ],
-  "resources": [
-    {
-      "id": "accommodation",
-      "name": "Corporate & Industrial Accommodation Solutions",
-      "type": "service",
-      "url": "https://corphubsolution.vercel.app/services/accommodation",
-      "description": "Rental property arrangements, hotel & guest house accommodation at corporate rates with PO terms, and managed housing with housekeeping & utilities."
-    },
-    {
-      "id": "transport",
-      "name": "Customized Corporate Transportation Solutions",
-      "type": "service",
-      "url": "https://corphubsolution.vercel.app/services/transport",
-      "description": "Corporate staff commute shuttles, airport transfers, outstation business travel, and long-term vehicle arrangements without fixed packages."
-    },
-    {
-      "id": "material-supply",
-      "name": "Industrial Material Supply & Sourcing",
-      "type": "service",
-      "url": "https://corphubsolution.vercel.app/services/material-supply",
-      "description": "Reliable industrial material sourcing and direct supply across electrical, civil, mechanical, safety consumables and hardware."
-    },
-    {
-      "id": "vendor-management",
-      "name": "Vendor Management & Site Liaison",
-      "type": "service",
-      "url": "https://corphubsolution.vercel.app/services/vendor-management",
-      "description": "End-to-end vendor vetting, contract administration, SLA compliance tracking, and dispute management for engineering sites."
-    },
-    {
-      "id": "event-management",
-      "name": "Corporate Event Management",
-      "type": "service",
-      "url": "https://corphubsolution.vercel.app/services/event-management",
-      "description": "Turnkey event management for plant inaugurations, Bhoomi Pujan, corporate annual meets, vendor summits, and HSE workshops."
+      "description": "Turnkey event coordination for plant inaugurations, Bhoomi Pujan, corporate conferences, and VIP hospitality.",
+      "representativeQueries": [
+        "Factory inauguration event organizer Gujarat",
+        "Groundbreaking ceremony planner Sanand",
+        "Corporate conference organizer Ahmedabad"
+      ]
     }
   ]
 }
