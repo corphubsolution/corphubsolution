@@ -60,7 +60,7 @@ export default function AboutPage() {
   return (
     <>
       <SEO
-        title="About CORPHUB SOLUTION | Industrial & Corporate Support Services Company in Gujarat"
+        title="About Us | CORPHUB SOLUTION — Industrial Support Gujarat"
         description="CORPHUB SOLUTION is a Gujarat-based B2B industrial support company headquartered in Palanpur, Banaskantha. 3+ years of experience providing integrated accommodation, transportation, material supply, vendor management & event management services for factories, EPC firms & infrastructure projects."
         canonicalPath="/about"
         ogImage="/assets/images/about-team.jpg"

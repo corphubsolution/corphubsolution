@@ -34,7 +34,7 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="CORPHUB SOLUTION — Industrial & Corporate Support Services in Gujarat | Accommodation, Transport, Material Supply"
+        title="CORPHUB SOLUTION — Industrial & Corporate Support Services"
         description="CORPHUB SOLUTION is your single-point industrial project support partner in Gujarat. We coordinate corporate accommodation, employee transportation, industrial material supply, vendor management & event logistics for factories, EPC firms & contractors across Sanand, Ahmedabad, Gandhinagar, Vadodara & Palanpur."
         canonicalPath="/"
         ogImage="/assets/images/home.png"

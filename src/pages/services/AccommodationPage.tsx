@@ -80,7 +80,7 @@ export default function AccommodationPage() {
   return (
     <>
       <SEO
-        title="Corporate & Industrial Accommodation Solutions in Gujarat | Staff Housing & Guest House | CORPHUB SOLUTION"
+        title="Corporate Accommodation Solutions Gujarat | CORPHUB SOLUTION"
         description="CORPHUB SOLUTION arranges corporate accommodation, workforce housing, executive guest houses & serviced apartments for industrial projects near Sanand GIDC, Ahmedabad, Gandhinagar, Vadodara & Palanpur. Flexible PO-based booking, managed stays & competitive corporate rates."
         canonicalPath="/services/accommodation"
         ogImage="/assets/images/accommodation-hero.png"

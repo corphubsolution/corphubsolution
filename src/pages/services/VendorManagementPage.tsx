@@ -65,7 +65,7 @@ export default function VendorManagementPage() {
   return (
     <>
       <SEO
-        title="Industrial Vendor Management & Site Liaison Services in Gujarat | CORPHUB SOLUTION"
+        title="Vendor Management & Site Liaison Gujarat | CORPHUB SOLUTION"
         description="CORPHUB SOLUTION provides end-to-end vendor management, local supplier coordination, contractor follow-ups & on-site progress support for industrial and manufacturing projects across Gujarat. Vendor sourcing, milestone tracking & documentation for EPC firms, factories & infrastructure projects."
         canonicalPath="/services/vendor-management"
         ogImage="/assets/images/vender.png"

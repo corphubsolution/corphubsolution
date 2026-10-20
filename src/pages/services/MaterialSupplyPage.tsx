@@ -278,7 +278,7 @@ ${formData.fileName ? `📎 *Document Attached:* ${formData.fileName}` : ''}`;
   return (
     <>
       <SEO
-        title="Industrial Material Supply & Sourcing in Gujarat | Electrical, Civil, Mechanical | CORPHUB SOLUTION"
+        title="Industrial Material Supply Gujarat | CORPHUB SOLUTION"
         description="CORPHUB SOLUTION provides reliable industrial material sourcing and direct supply for factories, EPC firms & contractors in Gujarat. Free vendor connection or quotation-based direct supply for site cabins, electrical switchgear, cables, generators, steel, fasteners & automation components across Ahmedabad, Sanand, Vadodara & Palanpur."
         canonicalPath="/services/material-supply"
         ogImage="/assets/images/material-supply-hero.png"

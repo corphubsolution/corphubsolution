@@ -149,7 +149,7 @@ export default function EventManagementPage() {
   return (
     <>
       <SEO
-        title="Corporate & Industrial Event Management in Gujarat | Plant Inauguration, Conferences | CORPHUB SOLUTION"
+        title="Corporate Event Management Gujarat | CORPHUB SOLUTION"
         description="CORPHUB SOLUTION coordinates corporate & industrial events from planning to execution in Gujarat. Plant inaugurations, foundation stone ceremonies, vendor meets, B2B conferences, gala dinners, training workshops & VIP hospitality across Palanpur, Ahmedabad, Sanand, Gandhinagar & Vadodara."
         canonicalPath="/services/event-management"
         ogImage="/assets/images/events/event-hero.jpg"

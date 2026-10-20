@@ -45,7 +45,7 @@ export default function ContactPage() {
   return (
     <>
       <SEO
-        title="Contact CORPHUB SOLUTION | Palanpur, Banaskantha, Gujarat | Project Enquiries"
+        title="Contact CORPHUB SOLUTION | Operations Desk Gujarat"
         description="Contact CORPHUB SOLUTION in Palanpur, Gujarat. Call +91 9157060290 or message for industrial housing, transport, material supply & site liaison."
         canonicalPath="/contact"
         ogImage="/assets/images/hero-home.jpg"

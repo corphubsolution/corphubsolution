@@ -102,7 +102,7 @@ export default function TransportPage() {
   return (
     <>
       <SEO
-        title="Corporate Staff Transportation & Employee Shuttle Services in Gujarat | CORPHUB SOLUTION"
+        title="Corporate Staff Transportation Gujarat | CORPHUB SOLUTION"
         description="CORPHUB SOLUTION provides customized corporate transportation, employee pickup-drop shuttles, airport transfers, outstation business travel & long-term vehicle contracts for industrial projects across Ahmedabad, Sanand, Gandhinagar, Vadodara & Palanpur. No fixed KM limits."
         canonicalPath="/services/transport"
         ogImage="/assets/images/Transport.png"
