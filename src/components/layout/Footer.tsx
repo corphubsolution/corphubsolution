@@ -25,6 +25,27 @@ function InstagramIcon({ size = 15, className = '' }: { size?: number; className
   );
 }
 
+function LinkedInIcon({ size = 15, className = '' }: { size?: number; className?: string }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  );
+}
+
 const COMPANY_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about' },
@@ -182,6 +203,18 @@ export default function Footer() {
                 >
                   <InstagramIcon size={15} className="text-[#E1306C]" />
                   <span>Follow on Instagram</span>
+                </a>
+
+                <a
+                  href={CONTACT.social.linkedin}
+                  target={CONTACT.social.linkedin !== '#' ? '_blank' : undefined}
+                  rel={CONTACT.social.linkedin !== '#' ? 'noopener noreferrer' : undefined}
+                  className="inline-flex items-center gap-2 text-xs font-semibold text-white/90 hover:text-orange-400 transition-colors px-3 py-2 rounded-lg bg-white/5 border border-white/10 hover:border-orange-400/40"
+                  id="footer-linkedin-btn"
+                  aria-label="Follow us on LinkedIn"
+                >
+                  <LinkedInIcon size={15} className="text-[#0A66C2]" />
+                  <span>Follow on LinkedIn</span>
                 </a>
               </li>
             </ul>

@@ -13,5 +13,7 @@ export const CONTACT = {
   },
   social: {
     instagram: 'https://www.instagram.com/corphub_solution/',
+    // Configuration placeholder: replace with official LinkedIn profile URL when provided by client
+    linkedin: '#',
   },
 } as const;

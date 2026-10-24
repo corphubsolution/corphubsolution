@@ -98,17 +98,17 @@ export const SERVICES: Service[] = [
     slug: '/services/event-management',
     name: 'Event Management',
     shortName: 'Event Mgmt',
-    tagline: 'Corporate & Industrial Event Management. End-to-End Coordination.',
+    tagline: 'Meeting, Banquet & Corporate Hospitality Arrangements.',
     description:
-      'From planning to execution, we coordinate every detail for industrial plant inaugurations, vendor meets, B2B conferences, and corporate gatherings.',
+      'We arrange meeting spaces, hotel accommodation, food, refreshments, and complete event coordination according to your requirements, budget, schedule, and team size.',
     heroImage: '/assets/images/events/event-hero.webp',
     icon: CalendarCheck,
     color: '#052447',
     features: [
-      'Plant inaugurations & groundbreaking ceremonies',
-      'Vendor meets & stakeholder B2B conferences',
-      'Corporate gala dinners & executive gatherings',
-      'Technical training workshops & VIP guest hospitality',
+      'Meeting & conference rooms with AV setup',
+      'Hotel stay & guest accommodation with meal plans',
+      'Food, banquet & corporate catering arrangements',
+      'End-to-end event coordination from booking to checkout',
     ],
   },
 ];
