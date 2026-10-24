@@ -4,12 +4,12 @@ export const config = {
 
 const PAGES = [
   { path: '', priority: '1.0', changefreq: 'weekly' },
-  { path: 'services/accommodation', priority: '0.9', changefreq: 'monthly' },
-  { path: 'services/transport', priority: '0.9', changefreq: 'monthly' },
-  { path: 'services/material-supply', priority: '0.9', changefreq: 'monthly' },
-  { path: 'services/vendor-management', priority: '0.9', changefreq: 'monthly' },
   { path: 'services/event-management', priority: '0.9', changefreq: 'weekly' },
-  { path: 'about', priority: '0.8', changefreq: 'monthly' },
+  { path: 'services/accommodation', priority: '0.9', changefreq: 'weekly' },
+  { path: 'services/transport', priority: '0.9', changefreq: 'weekly' },
+  { path: 'services/material-supply', priority: '0.9', changefreq: 'weekly' },
+  { path: 'services/vendor-management', priority: '0.9', changefreq: 'weekly' },
+  { path: 'about', priority: '0.8', changefreq: 'weekly' },
   { path: 'contact', priority: '0.8', changefreq: 'monthly' },
   { path: 'privacy-policy', priority: '0.3', changefreq: 'yearly' },
   { path: 'terms', priority: '0.3', changefreq: 'yearly' },
