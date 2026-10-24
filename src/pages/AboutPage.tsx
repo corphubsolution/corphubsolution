@@ -105,7 +105,7 @@ export default function AboutPage() {
           },
           {
             question: 'Where is CORPHUB SOLUTION headquartered and which areas does it serve?',
-            answer: 'CORPHUB SOLUTION is headquartered in Palanpur, Banaskantha district, Gujarat. We serve all major industrial hubs across Gujarat including Sanand, Ahmedabad, Gandhinagar, Vadodara, Mehsana, Bharuch, Dahej, and Northern Gujarat.',
+            answer: 'CORPHUB SOLUTION is headquartered in Palanpur, Banaskantha district, Gujarat. We serve all 7 major industrial belts across Gujarat: (1) Ahmedabad-Sanand, (2) Vadodara-Halol, (3) Bharuch-Ankleshwar-Dahej, (4) Surat-Vapi, (5) Rajkot-Morbi-Jamnagar, (6) Kutch-Gandhidham, and (7) North Gujarat.',
           },
         ]}
       />
