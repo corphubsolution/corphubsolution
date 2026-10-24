@@ -340,21 +340,7 @@ const PROCESS_STEPS = [
   },
 ];
 
-const AUDIENCES = [
-  'Industrial & Manufacturing Companies',
-  'Engineering, EPC & Infrastructure Firms',
-  'Corporate Offices, Businesses & NGOs',
-  'Institutions, Government Bodies & Trade Delegations',
-];
 
-const GALLERY_PHOTOS = [
-  { src: '/assets/images/events/event-hero.webp', alt: 'Corporate Meeting & Conference Auditorium' },
-  { src: '/assets/images/events/plant-inauguration.jpg', alt: 'Industrial Plant Inauguration Ceremony' },
-  { src: '/assets/images/events/gala-dinner.jpg', alt: 'Corporate Banquet & Gala Dinner' },
-  { src: '/assets/images/events/training-seminar.jpg', alt: 'Corporate Workshop & Seminar Hall' },
-  { src: '/assets/images/events/vip-hospitality.jpg', alt: 'Guest Accommodation & Executive Suites' },
-  { src: '/assets/images/events/event-logistics.jpg', alt: 'Audio-Visual & Conference Stage Setup' },
-];
 
 export default function EventManagementPage() {
   const whatsappUrl = buildEnquiryLink('Meeting, Banquet & Corporate Hospitality Arrangements');
@@ -1178,97 +1164,7 @@ export default function EventManagementPage() {
         </div>
       </section>
 
-      {/* ── 8. EVENTS FOR INDUSTRIAL & CORPORATE NEEDS (Gallery & Audiences) ── */}
-      <section className="py-16 md:py-24 bg-[#071C3C] text-white">
-        <div className="container-site max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            
-            {/* Left Content Card */}
-            <div className="lg:col-span-5">
-              <ScrollReveal>
-                <div className="inline-block px-3 py-1 rounded-md bg-white/10 text-orange-400 text-xs font-extrabold uppercase tracking-widest mb-3 border border-white/15">
-                  Suitable For Multiple Organizations
-                </div>
 
-                <h2
-                  className="font-display font-extrabold text-white mb-5 leading-tight"
-                  style={{ fontSize: 'clamp(1.85rem, 3.2vw, 2.5rem)' }}
-                >
-                  Events for Industrial and Corporate Needs
-                </h2>
-
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-8">
-                  Whether it&apos;s a company meeting, NGO conference, executive project review, or plant inauguration, we coordinate complete event and hospitality logistics to ensure a professional and seamless experience.
-                </p>
-
-                {/* Audiences List with Orange Checkmarks */}
-                <div className="space-y-3.5 mb-8">
-                  {AUDIENCES.map((item, idx) => (
-                    <div key={idx} className="flex items-center gap-3">
-                      <div className="w-5 h-5 rounded-md bg-[#FF6B00] text-white flex items-center justify-center shrink-0">
-                        <Check size={13} strokeWidth={3} />
-                      </div>
-                      <span className="text-xs sm:text-sm font-semibold text-slate-200">
-                        {item}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex flex-wrap items-center gap-4">
-                  <Button
-                    to="/contact"
-                    variant="primary"
-                    size="md"
-                    className="bg-[#FF6B00] hover:bg-[#e05e00] text-white font-extrabold px-6 py-3 rounded-xl shadow-lg transition-colors text-xs sm:text-sm uppercase tracking-wider"
-                  >
-                    <span>Get a Quote</span>
-                    <ArrowRight size={15} />
-                  </Button>
-
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-5 py-3 rounded-xl border border-white/20 transition-colors text-xs sm:text-sm"
-                  >
-                    <MessageCircle size={16} className="text-[#25D366]" />
-                    <span>Enquire About Hospitality</span>
-                  </a>
-                </div>
-              </ScrollReveal>
-            </div>
-
-            {/* Right Photo Gallery Grid (6 Photos in 3x2) */}
-            <div className="lg:col-span-7">
-              <ScrollReveal delay={150}>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                  {GALLERY_PHOTOS.map((photo, idx) => (
-                    <div
-                      key={idx}
-                      className="rounded-2xl overflow-hidden aspect-4/3 relative group border border-white/10 shadow-lg"
-                    >
-                      <img
-                        src={photo.src}
-                        alt={photo.alt}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        loading="lazy"
-                        width={300}
-                        height={225}
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-85 group-hover:opacity-100 transition-opacity" />
-                      <div className="absolute bottom-2.5 left-2.5 right-2.5 text-[11px] font-semibold text-white truncate drop-shadow-sm">
-                        {photo.alt}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </ScrollReveal>
-            </div>
-
-          </div>
-        </div>
-      </section>
 
       {/* ── 9. FINAL BOTTOM CTA BANNER ── */}
       <section className="py-14 md:py-18 bg-[#05172E] text-white border-t border-white/10">

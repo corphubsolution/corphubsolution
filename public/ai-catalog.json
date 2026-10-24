@@ -55,14 +55,15 @@
     },
     {
       "identifier": "urn:ard:corphubsolution:event-management",
-      "displayName": "Corporate Event Management",
+      "displayName": "Meeting, Banquet & Corporate Hospitality Arrangements",
       "type": "service",
       "url": "https://corphubsolution.vercel.app/services/event-management",
-      "description": "Turnkey event coordination for plant inaugurations, Bhoomi Pujan, corporate conferences, and VIP hospitality.",
+      "description": "Professional meeting rooms, hotel accommodation with meal plans, catering, banquet arrangements, and complete event coordination across Gujarat.",
       "representativeQueries": [
-        "Factory inauguration event organizer Gujarat",
-        "Groundbreaking ceremony planner Sanand",
-        "Corporate conference organizer Ahmedabad"
+        "Corporate meeting room booking Palanpur Gujarat",
+        "Hotel stay with meal plans corporate group Gujarat",
+        "Corporate banquet and hospitality coordinator Ahmedabad",
+        "Factory inauguration event organizer Gujarat"
       ]
     }
   ]
